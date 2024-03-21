@@ -1,0 +1,28 @@
+export const FOOTER = {
+  LINK_TITLE_1: 'Company',
+  LINK_TITLE_2: 'Services',
+  LINK_TITLE_3: 'Policies',
+  LINK_1: 'Home',
+  LINK_2: 'About Us',
+  LINK_3: 'Trading Silver Account',
+  LINK_4: 'Trading Gold Account',
+  LINK_5: 'Trading Platinum Account',
+  LINK_6: 'Markets',
+  LINK_7: 'Webtrader',
+  LINK_8: 'Contact Us',
+  LINK_9: 'Terms and conditions',
+  LINK_10: 'Privacy Policies',
+  LINK_11: 'KYC',
+  LINK_12: 'Risk Disclosure',
+  LINK_13: 'Withdrawal Policies',
+  LINK_14: 'Cookies Policies',
+  LINK_15: 'AML Policies',
+  LINK_16: 'Bonus Policies',
+  COMPANY: 'Our strategies have helped businesses across various industries boost their online presence, increase sales, and outperform their competition.<br><br>Fibra Fx - Parne Market S.A. de C.V. La quemada 439 CDMX',
+  // COMPANY: 'Our strategies have helped businesses across various industries boost their online presence, increase sales, and outperform their competition.',
+  COMPANY_TITLE: 'Contact Us',
+  COMPANY_EMAIL: 'Email',
+  COMPANY_PHONE: 'Phone Number',
+  COPY: 'All rights reserved. - Fibra Fx - Parne Market S.A. de C.V'
+  // COPY: 'All rights reserved. - Fibra Fx'
+}

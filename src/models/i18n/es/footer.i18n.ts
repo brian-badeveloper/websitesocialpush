@@ -1,0 +1,28 @@
+export const FOOTER = {
+  LINK_TITLE_1: 'Compañia',
+  LINK_TITLE_2: 'Servicios',
+  LINK_TITLE_3: 'Políticas',
+  LINK_1: 'Home',
+  LINK_2: 'Sobre nosotros',
+  LINK_3: 'Cuentas Plata',
+  LINK_4: 'Cuentas Oro',
+  LINK_5: 'Cuentas Platino',
+  LINK_6: 'Mercados',
+  LINK_7: 'Operador Web',
+  LINK_8: 'Contactenos',
+  LINK_9: 'Terminos y Condiciones',
+  LINK_10: 'Políticas de Privacidad',
+  LINK_11: 'KYC',
+  LINK_12: 'Divulgación de Riesgos',
+  LINK_13: 'Políticas de Retiro',
+  LINK_14: 'Políticas de Cookies',
+  LINK_15: 'Políticas AML',
+  LINK_16: 'Políticas de Bonos',
+  COMPANY: 'Nuestras estrategias han ayudado a empresas de diversas industrias a impulsar su presencia en línea, aumentar las ventas y superar a la competencia.<br><br>Fibra Fx - Parne Market S.A. de C.V. La quemada 439 CDMX',
+  // COMPANY: 'Nuestras estrategias han ayudado a empresas de diversas industrias a impulsar su presencia en línea, aumentar las ventas y superar a la competencia.',
+  COMPANY_TITLE: 'Contáctenos',
+  COMPANY_EMAIL: 'Correo Electrónico',
+  COMPANY_PHONE: 'Teléfono',
+  COPY: 'Todos los derechos reservados. - Fibra Fx - Parne Market S.A. de C.V'
+  // COPY: 'Todos los derechos reservados. - Fibra Fx'
+}

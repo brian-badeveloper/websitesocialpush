@@ -29,8 +29,8 @@ const HomePage = () => {
   return (
     <>
       <Seo
-        title={translate.HOME.TITLE}
-        description={translate.HOME.DESCRIPTION}
+        title={translate.NOTFOUND.TITLE}
+        description={translate.NOTFOUND.DESCRIPTION}
         lang={lang}
       />
       <section className={styles.not_found}>

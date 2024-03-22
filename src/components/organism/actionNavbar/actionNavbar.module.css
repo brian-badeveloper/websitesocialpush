@@ -1,0 +1,22 @@
+.action__navbar_item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.action__navbar_link {
+	position: relative;
+	display: block;
+}
+
+.action__navbar_item___lang {
+	display: none;
+}
+
+
+@media screen and (max-width: 990px) {
+	.action__navbar_item___lang {
+		display: block;
+	}
+}

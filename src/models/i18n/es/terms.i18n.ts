@@ -1,12 +1,12 @@
 export const TERMS = {
-  TITLE: 'Fibra Fx - Términos y Condiciones',
+  TITLE: 'Nextjs - Términos y Condiciones',
   DESCRIPTION: "",
   HEADER_TITLE: "Términos y Condiciones",
   HEADER_TEXT: "Conózcanos y comercie con confianza",
   HEADER_BTN: "Unirse Ahora",
   BODY: `<h2>TÉRMINOS Y CONDICIONES</h2>
   <p>Acuerdo de Licencia para el Uso de Información</p>
-  <p>Este Acuerdo de Licencia ("Acuerdo") se celebra entre Fibra FX ("Compañía") y el cliente (persona física o jurídica, 
+  <p>Este Acuerdo de Licencia ("Acuerdo") se celebra entre Nextjs ("Compañía") y el cliente (persona física o jurídica, 
     "Cliente") que utiliza los servicios y la información proporcionados por la Compañía. Este Acuerdo es parte integral de 
     los documentos públicos que rigen la relación entre la Compañía y sus Clientes.</p>
   <h3>1. Disposiciones Generales</h3>
@@ -62,7 +62,5 @@ export const TERMS = {
   </p>
   <h3>8. Aceptación del Cliente</h3>
   <p>El Cliente acepta todas las disposiciones de este Acuerdo y se compromete a cumplirlas mientras utilice los servicios de la Compañía. En caso de desacuerdo, el Cliente debe dejar de utilizar los servicios de la Compañía de inmediato.</p>
-  `,
-  JOIN_US_TEXT: "Únase a nosotros en este apasionante viaje comercial",
-  EMAIL: "support@fibrafx.com"
+  `
 }

@@ -1,0 +1,302 @@
+.link {
+	width: auto;
+	max-width: var(--btn-auto);
+	height: auto;
+	position: relative;
+	outline: none;
+	color: var(--black);
+	font-family: var(--font-text);
+	font-size: var(--btn-size-sm);
+	font-weight: 600;
+	transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+	z-index: 2;
+	white-space: pre-wrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.link:hover {
+	color: var(--secondary);
+}
+
+.link__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.link__content,
+.link__icon {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.link .link__icon.normal svg,
+.link .link__icon.normal svg path {
+	fill: var(--white);
+	transition: fill 0.3s ease-in-out;
+}
+
+.link .link__icon.stroke svg,
+.link .link__icon.stroke svg path {
+	stroke: var(--white);
+	transition: stroke 0.3s ease-in-out;
+}
+
+.link:hover .link__icon.normal svg,
+.link:hover .link__icon.normal svg path {
+	fill: var(--black);
+}
+
+.link:hover .link__icon.stroke svg,
+.link:hover .link__icon.stroke svg path {
+	stroke: var(--black);
+}
+
+.link.disable {
+	opacity: 0.5;
+}
+
+/* --- colors --- */
+
+.link.primary {
+	color: var(--primary);
+}
+
+.link.primary:hover {
+	color: var(--secondary);
+}
+
+.link.primary .link__icon.normal svg,
+.link.primary .link__icon.normal svg path {
+	fill: var(--primary);
+}
+
+.link.primary .link__icon.stroke svg,
+.link.primary .link__icon.stroke svg path {
+	stroke: var(--primary);
+}
+
+.link.primary:hover .link__icon.normal svg,
+.link.primary:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.primary:hover .link__icon.stroke svg,
+.link.primary:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.secondary {
+	color: var(--secondary);
+}
+
+.link.secondary:hover {
+	color: var(--primary);
+}
+
+.link.secondary .link__icon.normal svg,
+.link.secondary .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.secondary .link__icon.stroke svg,
+.link.secondary .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.secondary:hover .link__icon.normal svg,
+.link.secondary:hover .link__icon.normal svg path {
+	fill: var(--primary);
+}
+
+.link.secondary:hover .link__icon.stroke svg,
+.link.secondary:hover .link__icon.stroke svg path {
+	stroke: var(--primary);
+}
+
+.link.tertiary {
+	color: var(--tertiary);
+}
+
+.link.tertiary:hover {
+	color: var(--secondary);
+}
+
+.link.tertiary .link__icon.normal svg,
+.link.tertiary .link__icon.normal svg path {
+	fill: var(--tertiary);
+}
+
+.link.tertiary .link__icon.stroke svg,
+.link.tertiary .link__icon.stroke svg path {
+	stroke: var(--tertiary);
+}
+
+.link.tertiary:hover .link__icon.normal svg,
+.link.tertiary:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.tertiary:hover .link__icon.stroke svg,
+.link.tertiary:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.blue {
+	color: var(--blue-ribbon);
+}
+
+.link.blue:hover {
+	color: var(--secondary);
+}
+
+.link.blue .link__icon.normal svg,
+.link.blue .link__icon.normal svg path {
+	fill: var(--blue-ribbon);
+}
+
+.link.blue .link__icon.stroke svg,
+.link.blue .link__icon.stroke svg path {
+	stroke: var(--blue-ribbon);
+}
+
+.link.blue:hover .link__icon.normal svg,
+.link.blue:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.blue:hover .link__icon.stroke svg,
+.link.blue:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.dark {
+	color: var(--black);
+}
+
+.link.dark:hover {
+	color: var(--secondary);
+}
+
+.link.dark .link__icon.normal svg,
+.link.dark .link__icon.normal svg path {
+	fill: var(--black);
+}
+
+.link.dark .link__icon.stroke svg,
+.link.dark .link__icon.stroke svg path {
+	stroke: var(--black);
+}
+
+.link.dark:hover .link__icon.normal svg,
+.link.dark:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.dark:hover .link__icon.stroke svg,
+.link.dark:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.black {
+	color: var(--black);
+}
+
+.link.black:hover {
+	color: var(--secondary);
+}
+
+.link.black .link__icon.normal svg,
+.link.black .link__icon.normal svg path {
+	fill: var(--black);
+}
+
+.link.black .link__icon.stroke svg,
+.link.black .link__icon.stroke svg path {
+	stroke: var(--black);
+}
+
+.link.black:hover .link__icon.normal svg,
+.link.black:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.black:hover .link__icon.stroke svg,
+.link.black:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+.link.light {
+	color: var(--white);
+}
+
+.link.light:hover {
+	color: var(--secondary);
+}
+
+.link.light .link__icon.normal svg,
+.link.light .link__icon.normal svg path {
+	fill: var(--white);
+}
+
+.link.light .link__icon.stroke svg,
+.link.light .link__icon.stroke svg path {
+	stroke: var(--white);
+}
+
+.link.light:hover .link__icon.normal svg,
+.link.light:hover .link__icon.normal svg path {
+	fill: var(--secondary);
+}
+
+.link.light:hover .link__icon.stroke svg,
+.link.light:hover .link__icon.stroke svg path {
+	stroke: var(--secondary);
+}
+
+/* --- sizes --- */
+
+.link.sm {
+	max-width: var(--btn-width-sm);
+}
+
+.link.md {
+	max-width: var(--btn-width-md);
+}
+
+.link.lg {
+	max-width: var(--btn-width-lg);
+}
+
+.link.xl {
+	max-width: var(--btn-width-xl);
+}
+
+.link.auto {
+	max-width: var(--btn-width-auto);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1200px) {
+  .link {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .link {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.link {
+    font-size: 14px !important;
+  }
+}

@@ -1,0 +1,82 @@
+.textarea {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: 100px;
+	position: relative;
+	font-family: var(--font-text);
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--gray-silver-chalice);
+	border: 2px solid var(--gray-silver-chalice);
+	border-radius: 10px;
+	background: transparent;
+	padding: 5px 20px;
+	outline: none;
+	resize: vertical;
+	transition: background 0.3s ease-in-out;
+	display: block;
+}
+
+.textarea::placeholder {
+	color: var(--gray-silver-chalice);
+}
+
+.textarea:hover,
+.textarea:focus,
+.textarea:active {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.textarea_label {
+	font-family: var(--font-text);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--gray-dark);
+	padding: 0px 8px;
+	display: inline-block;
+}
+
+.textarea_label + .textarea {
+	margin-top: 5px;
+}
+
+/* ---- Size Input ---- */
+
+.textarea.sm {
+	width: 100%;
+	max-width: 240px;
+}
+
+.textarea.md {
+	width: 100%;
+	max-width: 400px;
+}
+
+.textarea.lg {
+	width: 100%;
+	max-width: 600px;
+}
+
+.textarea.xl {
+	width: 100%;
+	max-width: 800px;
+}
+
+.textarea.auto {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 990px) {
+	.textarea_label {
+		font-size: 14px;
+	}
+	
+	.textarea {
+		font-size: 14px;
+	}
+}

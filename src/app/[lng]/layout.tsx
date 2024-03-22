@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 import { LayoutParams } from '@/models/interfaces/ParamsProps'
-import { InitializeLanguage } from '@/helpers/language'
+import { InitializeLanguage } from '@/helpers/language';
 
 export const metadata: Metadata = {
   title: "",
@@ -14,6 +14,7 @@ export default function RootLayout({
   children,
   params
 }: LayoutParams) {
+
   InitializeLanguage()
 
   return (

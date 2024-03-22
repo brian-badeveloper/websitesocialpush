@@ -1,9 +1,6 @@
-import React from 'react'
-
 import { ErrorForm } from '@/models/interfaces/ErrorForm'
 import { FormActions, ValidateForm, paramsValidateForm } from '@/models/interfaces/ValidateForm'
 import getLanguage from '@/models/i18n'
-
 
 const Errors = ({params, data, lang}: ErrorForm) => {
 

@@ -8,6 +8,6 @@ export interface RedirectCustomLinks  {
 
 export interface Links {
   lng: string | LanguagesType
-  defaultLang: string | LanguagesType
+  defaultLang?: string | LanguagesType
   link: string
 }

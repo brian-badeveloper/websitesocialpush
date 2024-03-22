@@ -1,6 +1,6 @@
-import { LanguagesType } from '@/models/i18n';
+import { LanguagesType } from '@/models/i18n'
 
 export interface LanguageProps {
   lng: LanguagesType
-  defaultLang?: string | LanguagesType
+  defaultLang: string | LanguagesType
 }

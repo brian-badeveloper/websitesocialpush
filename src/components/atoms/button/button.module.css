@@ -1,0 +1,158 @@
+.button {
+	width: auto;
+	max-width: var(--btn-auto);
+	height: auto;
+	position: relative;
+	outline: none;
+	background: var(--black);
+	color: var(--white);
+	font-family: var(--font-text);
+	font-size: var(--btn-size-sm);
+	font-weight: 700;
+	padding: 10px 25px;
+	border-radius: 50px;
+	border: 2px solid var(--black);
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+	overflow: hidden;
+	z-index: 2;
+	white-space: pre-wrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.button:hover {
+	background: var(--white);
+}
+
+/* --- backgrounds --- */
+
+.button.primary {
+	background: var(--primary);
+	color: var(--white);
+	border-color: var(--primary);
+}
+
+.button.primary:hover {
+	background: var(--white);
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.button.secondary {
+	background: var(--secondary);
+	color: var(--primary);
+	border-color: var(--secondary);
+}
+
+.button.secondary:hover {
+	background: var(--white);
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.button.tertiary {
+	background: var(--tertiary);
+	color: var(--white);
+	border-color: var(--tertiary);
+}
+
+.button.tertiary:hover {
+	background: var(--white);
+	color: var(--tertiary);
+	border-color: var(--tertiary);
+}
+
+.button.blue {
+	background: var(--blue-ribbon);
+	color: var(--white);
+	border-color: var(--blue-ribbon);
+}
+
+.button.blue:hover {
+	background: var(--white);
+	color: var(--blue-ribbon);
+	border-color: var(--blue-ribbon);
+}
+
+.button.dark {
+	background: var(--black);
+	color: var(--white);
+	border-color: var(--black);
+}
+
+.button.dark:hover {
+	background: var(--white);
+	color: var(--black);
+	border-color: var(--black);
+}
+
+.button.black {
+	background: var(--black);
+	color: var(--white);
+	border-color: var(--black);
+}
+
+.button.black:hover {
+	background: var(--white);
+	color: var(--black);
+	border-color: var(--black);
+}
+
+.button.light {
+	background: transparent;
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.button.light:hover {
+	color: var(--white);
+	background: var(--primary);
+}
+
+
+/* --- sizes --- */
+
+.button.sm {
+	width: 100%;
+	max-width: var(--btn-width-sm);
+}
+
+.button.md {
+	width: 100%;
+	max-width: var(--btn-width-md);
+}
+
+.button.lg {
+	width: 100%;
+	max-width: var(--btn-width-lg);
+}
+
+.button.xl {
+	width: 100%;
+	max-width: var(--btn-width-xl);
+}
+
+.button.auto {
+	width: 100%;
+	max-width: var(--btn-width-auto);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1200px) {
+  .button {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .button {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.button {
+    font-size: 14px !important;
+  }
+}

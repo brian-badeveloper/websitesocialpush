@@ -5,45 +5,44 @@ import { useEffect, useState } from 'react'
 
 // components, interfaces, types and functions
 
-import { Params, SearchParams } from '@/models/interfaces/ParamsProps'
-import { changeLanguage, validateLangUrl } from '@/helpers/language'
-import { onDetectRedirect } from '@/helpers/redirectCustom'
+import { SearchParams } from '@/models/interfaces/ParamsProps'
+import { changeLanguage, getLang, InitializeLanguage, validateLangUrl } from '@/helpers/language'
+import { onActiveLinks, onDetectRedirect } from '@/helpers/redirectCustom'
 import getLanguage, { LanguagesType } from '@/models/i18n'
-import { headerTags, headerTagsUpdate } from '@/helpers/headerTags'
+import { Seo } from '@/components/atoms/seo/Seo'
+import Navbar from '@/components/organism/navbar/Navbar'
+import ContactUs from '@/components/organism/contactUs/ContactUs'
+import Footer from '@/components/organism/footer/Footer'
 
 const HomePage = ({ params: { lng } }: SearchParams) => {
 
   const [lang, setLang] = useState<LanguagesType>(lng)
+  const defaultLanguage = getLang()
 
   const changeLang = (lang: LanguagesType) => {
     setLang(lang)
     changeLanguage(lang)
   }
-  
-  // console.log(lng)
 
   const translate = getLanguage(lang)
 
   useEffect(() => {
-    // validateLangUrl(lng)
-    // onDetectRedirect()
-    headerTags(
-      translate.HOME.TITLE,
-      translate.HOME.DESCRIPTION,
-    )
+    onActiveLinks()
+    onDetectRedirect()
   },[])
 
-  useEffect(() => {
-    headerTagsUpdate(
-      translate.HOME.TITLE,
-      translate.HOME.DESCRIPTION,
-    )
-  },[lang])
   
   return (
-    <div>
-     hola - {lng}
-    </div>
+    <>
+      <Seo
+        title={translate.HOME.TITLE}
+        description={translate.HOME.DESCRIPTION}
+        lang={lang}
+      />
+     <Navbar changeLang={changeLang} lng={lang} defaultLang={defaultLanguage} />
+      <ContactUs lng={lang} defaultLang={defaultLanguage}/>
+      <Footer lng={lang} defaultLang={defaultLanguage} />
+    </>
   )
 }
 

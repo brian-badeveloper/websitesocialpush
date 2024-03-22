@@ -4,8 +4,9 @@ import { NAME_COOKIE } from './helpers/nameCookie'
 import sessionToken from './helpers/sessionToken'
 
 import { i18n } from '../i18n-config'
-import { getLocale, verifyLang } from './helpers/language'
+import { getLocale, verifyLang } from './helpers/middlewares/lang'
 import { verifyAuth } from './helpers/middlewares/auth'
+import { getLang, InitializeLanguage } from './helpers/language'
 
 export function middleware (request: NextRequest) {
   const token = request.cookies.get(NAME_COOKIE)
@@ -26,13 +27,13 @@ export function middleware (request: NextRequest) {
 export const config = {
   matcher: [
     // Matcher ignoring `/_next/` and `/api/`
-    // "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    '/:lng/',
-    '/login',
-    '/:lng/login',
-    '/register',
-    '/:lng/register',
-    '/dashboard/:path*',
-    '/:lng/dashboard/:path*',
+    "/((?!api|_next/static|_next/image|favicon.ico|icon.png).*)",
+    // '/:lng/',
+    // '/login',
+    // '/:lng/login',
+    // '/register',
+    // '/:lng/register',
+    // '/dashboard/:path*',
+    // '/:lng/dashboard/:path*',
   ]
 }

@@ -1,12 +1,12 @@
 export const TERMS = {
-  TITLE: 'Fibra Fx - Terms and Conditions',
+  TITLE: 'Nextjs - Terms and Conditions',
   DESCRIPTION: "",
   HEADER_TITLE: "Terms and Conditions",
   HEADER_TEXT: "meet us and trade with confidence",
   HEADER_BTN: "Join Now",
   BODY: `<h2>TERMS AND CONDITIONS</h2>
   <p>License Agreement for the Use of Information</p>
-  <p>This License Agreement ("Agreement") is entered into between Fibra FX ("Company") and the customer (natural or legal person, 
+  <p>This License Agreement ("Agreement") is entered into between Nextjs ("Company") and the customer (natural or legal person, 
     "Customer") who uses the services and information provided by the Company. This Agreement is an integral part of 
     the public documents governing the relationship between the Company and its Clients.</p>
   <h3>1. General Provisions</h3>
@@ -63,7 +63,5 @@ export const TERMS = {
   </p>
   <h3>8. Customer Acceptance</h3>
   <p>The Client accepts all the provisions of this Agreement and agrees to comply with them while using the Company's services. In case of disagreement, the Client must stop using the Company's services immediately.</p>
-  `,
-  JOIN_US_TEXT: "Join us on this exciting trading journey",
-  EMAIL: "support@fibrafx.com"
+  `
 }

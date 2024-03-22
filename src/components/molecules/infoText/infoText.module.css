@@ -1,0 +1,149 @@
+.info_text {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.info_text__content {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.info_text h1,
+.info_text h2,
+.info_text h3,
+.info_text h4,
+.info_text h5 {
+  font-family: var(--font-text);
+}
+
+.info_text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.info_text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.info_text h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.info_text h4,
+.info_text h5 {
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.info_text p {
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.info_text ul, 
+.info_text ol {
+  font-family: var(--font-text);
+  padding-left: 20px;
+}
+
+.info_text li {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* --- responsive --- */
+
+@media screen and (max-width: 1440px) {
+  .info_text h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .info_text h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .info_text h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info_text h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .info_text h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .info_text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .info_text h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .info_text h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .info_text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .info_text li {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .info_text h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .info_text h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

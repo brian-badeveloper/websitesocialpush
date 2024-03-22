@@ -1,0 +1,28 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import InfoText from './InfoText'
+
+const meta = {
+  title: 'Components/Molecules/InfoText',
+  component: InfoText,
+  parameters: {
+    layout: 'padded', // centered, fullscreen, padded
+  },
+  // tags: ['autodocs'],
+  argTypes: {
+  
+  },
+} satisfies Meta<typeof InfoText>
+
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const infoText: Story = {
+  args: {
+    body: `<h2>Términos y condiciones:</h2><p>Fibra FX, ofrece acceso a su sitio web y servicios a clientes que aceptan los Términos y Condiciones. Al utilizar el sitio web, usted confirma explícitamente que ha leído estos Términos y Condiciones y está de acuerdo con ellos.</p><p>Nuestras obligaciones están sujetas a cualquier límite o restricción que podamos acordar por escrito y a cualquier requisito legal, regulatorio, estatutario o de mercado.</p><p>Los siguientes Términos y Condiciones se aplican a todos los usuarios, y si necesita información adicional sobre alguno de los temas presentados a continuación, no dude en ponerse en contacto con nuestro servicio de atención al cliente en cualquier momento. Primero debe leer y aceptar estos Términos y Condiciones para beneficiarse de los mejores servicios proporcionados por fibrafx.com y el acuerdo será efectivo al aceptarlo. Si no está de acuerdo en quedar vinculado por los Términos y Condiciones de este acuerdo, asegúrese de informarnos por escrito. Si fibrafx.com decide realizar cambios, se publicarán en línea y para seguir operando el sitio web, es posible que se le pida que acepte los nuevos términos.</p><p>Para ser elegible para operar con fibrafx.com, debe tener al menos 18 años de edad y comprender completamente los riesgos involucrados. Por la presente, reconoce que tiene el conocimiento y la experiencia para operar y comprende los riesgos involucrados. No podemos ser responsables de ningún daño o pérdida y no somos responsables de verificar si tiene conocimientos suficientes o si sus decisiones comerciales son adecuadas.</p><p>Las mismas condiciones se aplican con respecto a restricciones legales. Debe comprender completamente dicho comercio; las inversiones y transacciones similares están reguladas de manera diferente en todo el mundo. El hecho de que pueda acceder a nuestro sitio web y utilizar las herramientas ofrecidas por fibrafx.com no significa necesariamente que sea legal hacerlo en su país. Los usuarios que accedan a este sitio deben informarse sobre las restricciones jurisdiccionales de las leyes que rigen en las Islas Marshall y declaran que los fondos que utiliza para operar no provienen de ninguna actividad criminal o en violación de ninguna ley.</p><p>No abuse de la licencia o los servicios que se le proporcionan. Al aceptar los Términos y Condiciones, se le otorga una licencia limitada, pero no puede enlazar profundamente al sitio web ni copiar y revender materiales que aparezcan en fibrafx.com. La información que proporcionamos debe utilizarse íntegramente para ejecutar inversiones dentro de fibrafx.com. Tenga en cuenta que cerrar o suspender su cuenta debido a un incumplimiento de los términos de servicio y explícitamente la Política de Uso Aceptable puede conllevar pérdidas debido al cierre de posiciones. No proporcione información falsa o inexacta. La licencia otorgada terminará si notamos que los datos que proporciona no son precisos y dejará de acceder a los servicios. Usted acepta que fibrafx.com puede terminar su acceso a cualquiera de los servicios ofrecidos para el comercio en línea a su sola discreción y con o sin aviso y cerrar su transacción.</p><h3>Sin garantías expresas o implícitas:</h3><p>Se prohíbe hacer uso ilegal de este Sitio, y se le aconseja y se le informa del hecho de que, además de estos Términos y Condiciones y todas y cada una de las políticas para el uso de este Sitio, puede y se espera que esté sujeto a las leyes y regulaciones aplicables en su jurisdicción o cualquier jurisdicción relevante, incluidas las leyes y/o regulaciones de juegos de azar, valores, impuestos y/o contra el lavado de dinero.</p><p>fibrafx.com no fomenta conductas que se considerarían un delito penal o que darían lugar a responsabilidad civil, o que violen de otra manera alguna ley. Además de cualquier remedio que podamos tener en la ley o en equidad, si determinamos, a nuestra única discreción, que ha violado o es probable que viole las prohibiciones anteriores, podemos tomar cualquier acción que consideremos necesaria para remediar o prevenir la violación, incluida, entre otras, la eliminación inmediata de los materiales relacionados y/o del Usuario de este Sitio.</p><p>Cooperaremos plenamente con cualquier autoridad policial o orden judicial o citación que nos solicite o nos ordene que revelemos la identidad de cualquier persona que publique dichos materiales. Usted acepta que toda la información proporcionada por usted es verdadera, precisa, completa y actual.</p><p>El Usuario acepta indemnizar, defender y eximir de responsabilidad a fibrafx.com, así como a todas y cada una de sus subsidiarias, agentes, empleados y/o funcionarios contra cualquier responsabilidad, obligación, reclamación, deuda, gasto, etc., relacionada de alguna manera con cualquier uso indebido o abuso del sitio, la información o los servicios proporcionados o contenidos aquí, incluidos en particular (pero no limitados a) cualquier incumplimiento de estos Términos y Condiciones y/o violación de cualquier ley (incluida cualquier violación o infracción de derechos de terceros) y/o cualquier incumplimiento de los Términos y Condiciones de terceros aplicables.</p>`
+  },
+  render: (args) => (
+    <div className='container'>
+      <InfoText {...args} />
+    </div>
+  ) 
+}

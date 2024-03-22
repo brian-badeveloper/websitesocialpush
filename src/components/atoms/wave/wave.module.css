@@ -1,0 +1,68 @@
+.wave {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave___top {
+  transform: scaleX(-1);
+}
+
+.wave___bottom {
+  top: inherit;
+  bottom: 0px;
+  transform: scaleX(-1) rotate(180deg);
+}
+
+.wave___top.circle {
+  transform: rotate(180deg);
+}
+
+.wave___bottom.circle {
+  transform: rotate(0deg);
+}
+
+.wave__svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 194px;
+}
+
+.wave__svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 194px;
+}
+
+.wave__svg___circle {
+  width: 110%;
+  height: 140px;
+  left: -5%;
+}
+
+.wave__path {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+  .wave__svg {
+    height: 134px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .wave__svg {
+    height: 104px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .wave__svg {
+    height: 80px;
+  }
+}

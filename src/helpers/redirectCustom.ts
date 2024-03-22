@@ -1,4 +1,3 @@
-import React, { MouseEventHandler } from 'react'
 import { Links, RedirectCustomLinks } from "@/models/interfaces/RedirectCustom"
 
 const onDetectRedirect = () => {
@@ -38,21 +37,14 @@ const onActionRedirect = (redirectTo: string) => {
   element?.scrollIntoView()
 }
 
-const onLink = ({lng, defaultLang, link}: Links) => {
-  const prefix = process.env.PREFIX
-  const mode = process.env.NODE_ENV
-
-  if (mode === 'production') {
-    return `${prefix ? `${prefix}` : ''}${lng !== defaultLang ? `/${lng}`:''}${link !== '/' ? `${link}/` : '/'}`
-  }
-
-  return `${lng !== defaultLang ? `/${lng}`:''}${link !== '/' ? `${link}/` : '/'}`
+const onLink = ({lng, link}: Links) => {
+  return `/${lng}${link !== '/' ? `${link}` : '/'}`
 }
 
 const activeLinks = () => {
   const URL = window.location.href
-  const menu = document.querySelectorAll(".navbar__menu-items a")
-  const footer = document.querySelectorAll('.footer__items a')
+  const menu = document.querySelectorAll(".navbar__menu_items a")
+  const footer = document.querySelectorAll('.footer__links a')
   
   menu.forEach((item, key) => {
     const element: HTMLAnchorElement = item as HTMLAnchorElement

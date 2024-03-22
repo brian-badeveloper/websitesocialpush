@@ -1,0 +1,103 @@
+.select {
+	width: 100%;
+	max-width: 100%;
+	height: 45px;
+	position: relative;
+	font-family: var(--font-text);
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--gray-silver-chalice);
+	border: 2px solid var(--gray-silver-chalice);
+	border-radius: 10px;
+	background: transparent;
+	padding: 5px 20px;
+	outline: none;
+	transition: background 0.3s ease-in-out;
+	display: block;
+	appearance: none;
+}
+
+.select::placeholder,
+.select option {
+	color: var(--gray-silver-chalice);
+}
+
+.select:hover,
+.select:focus,
+.select:active {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.select_label {
+	font-family: var(--font-text);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--gray-dark);
+	padding: 0px 8px;
+	display: inline-block;
+}
+
+.select_label + .select_content {
+	margin-top: 5px;
+}
+
+.select_content {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.select_content svg {
+	top: 50%;
+	right: 10px;
+	position: absolute;
+	pointer-events: none;
+	transform: translateY(-50%);
+}
+
+/* ---- Size Input ---- */
+
+.select.sm,
+.select_content.sm {
+	width: 100%;
+	max-width: 240px;
+}
+
+.select.md,
+.select_content.md {
+	width: 100%;
+	max-width: 400px;
+}
+
+.select.lg,
+.select_content.lg {
+	width: 100%;
+	max-width: 600px;
+}
+
+.select.xl,
+.select_content.xl {
+	width: 100%;
+	max-width: 800px;
+}
+
+.select.auto,
+.select_content.auto {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 990px) {
+	.select_label {
+		font-size: 14px;
+	}
+
+	.select {
+		font-size: 14px;
+		height: 35px;
+	}
+}

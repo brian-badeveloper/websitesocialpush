@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 import { NAME_COOKIE } from '@/helpers/nameCookie'
 import Cookies from 'js-cookie'
 import sessionToken from '../sessionToken'
-import { getLocale } from '../language'
+import { getLocale } from './lang'
 
 const verifyAuth = (request: NextRequest): NextResponse<unknown> | undefined => {
   const token = request.cookies.get(NAME_COOKIE)

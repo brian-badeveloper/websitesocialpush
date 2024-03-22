@@ -1,4 +1,3 @@
-import React from 'react'
 import { onActionRedirect, onDetectRedirect, onLink, onRedirect } from "./redirectCustom"
 import { LanguagesType } from '@/models/i18n'
 

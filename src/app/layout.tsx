@@ -18,7 +18,7 @@ export default function RootLayout({
   InitializeLanguage()
 
   return (
-    <html lang={params.lng}>
+    <html lang={params.lng} suppressHydrationWarning={true}>
       <body>
         {children}
       </body>

@@ -1,0 +1,160 @@
+.faq {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.faq__header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 10px 0px;
+  padding-left: 40px;
+}
+
+.faq__button {
+  width: 30px;
+  height: 30px;
+  background: var(--tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 3px;
+  left: 0px;
+  position: absolute;
+}
+
+.faq__button svg {
+  width: 21px;
+  height: 21px;
+}
+
+.faq.active .faq__button svg {
+  width: 13px;
+  height: 13px;
+}
+
+.faq__title {
+  font-family: var(--font-title);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.faq__body {
+  width: 100%;
+  height: auto;
+  max-height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq.active .faq__body {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* width */
+.faq__body::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.faq__body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.faq__body::-webkit-scrollbar-thumb {
+  background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.faq__body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.faq__paragraph {
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1440px) {
+  .faq__button {
+    width: 27px;
+    height: 27px;
+    margin-top: 3px;
+  }
+
+  .faq__button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .faq.active .faq__button svg {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .faq__title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .faq__paragraph {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .faq__button {
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+  }
+
+  .faq__button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .faq.active .faq__button svg {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .faq__title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .faq__button {
+    width: 23px;
+    height: 23px;
+    margin-top: 3px;
+  }
+
+  .faq__button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .faq.active .faq__button svg {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .faq__title {
+    font-size: 18px;
+  }
+}

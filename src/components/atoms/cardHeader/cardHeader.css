@@ -1,0 +1,150 @@
+.card-header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: var(--white);
+  color: var(--black);
+  padding: 13px 0px;
+  text-align: center;
+}
+
+.card-header.left {
+ text-align: left;
+}
+
+.card-header.center {
+  text-align: center;
+}
+
+.card-header.right {
+  text-align: right;
+}
+
+.card-header__title {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px 20px;
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 800;
+  position: relative;
+  line-height: 1.2;
+  letter-spacing: -0.167px;
+}
+
+.card-header__title--network {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card-header__title--network svg,
+.card-header__title--network svg path {
+  fill: var(--white);
+}
+
+.card-header.left .card-header__title--network {
+  justify-content: flex-start;
+ }
+ 
+ .card-header.center .card-header__title--network {
+  justify-content: center;
+ }
+ 
+ .card-header.right .card-header__title--network{
+  justify-content: flex-end;
+ }
+
+/* --- backgrounds --- */
+
+.card-header.primary {
+	background: var(--primary);
+	color: var(--white);
+}
+
+.card-header.secondary {
+	background: var(--orchid);
+	color: var(--white);
+}
+
+.card-header.tertiary {
+	background: var(--danube);
+	color: var(--white);
+}
+
+.card-header.blue {
+	background: var(--blue);
+	color: var(--white);
+}
+
+.card-header.black {
+	background: var(--black);
+	color: var(--white);
+}
+
+.card-header.light {
+	background: var(--white);
+	color: var(--black);
+}
+
+.card-header.light .card-header__title--network svg,
+.card-header.light .card-header__title--network svg path {
+  fill: var(--black);
+}
+
+.card-header.light:hover::before {
+	background: rgba(0,0,0,0.1);
+}
+
+.card-header.withoutColor {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background: var(--white);
+	color: var(--cornflower-lilac);
+}
+
+.card-header.withoutColor .card-header__title--network svg,
+.card-header.withoutColor .card-header__title--network svg path {
+  fill: var(--cornflower-lilac);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1440px) {
+  .card-header__title {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-header__title {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card-header,
+  .card-header.left,
+  .card-header.center,
+  .card-header.right {
+    text-align: center;
+  }
+
+  .card-header__title--network,
+  .card-header.left .card-header__title--network,
+  .card-header.center .card-header__title--network,
+  .card-header.right .card-header__title--network {
+    justify-content: center;
+  }
+
+  .card-header__title {
+    font-size: 14px !important;
+  }
+}

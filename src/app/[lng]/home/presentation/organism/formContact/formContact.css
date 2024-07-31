@@ -1,0 +1,66 @@
+.form-contact {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  background: var(--gradient-form);
+  border-radius: 17px;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.03), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.05), 0px 20px 13px 0px rgba(0, 0, 0, 0.06), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.07), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.09), 0px 100px 80px 0px rgba(0, 0, 0, 0.12);
+}
+
+.sb-show-main .form-contact {
+	width: auto;
+  max-width: 600px;
+}
+
+.form-contact__content {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  padding: 60px 40px 40px;
+}
+
+.form-contact__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.form-contact__group {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0px 12px;
+  margin-bottom: 30px;
+}
+
+.form-contact__group-md {
+  width: 100%;
+  max-width: 50%;
+}
+
+.form-contact__group--last {
+  margin-bottom: 0px;
+}
+
+.form-contact__group--full {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 990px) {
+  .form-contact__content {
+    padding: 40px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .form-contact__group-md {
+    width: 100%;
+    max-width: 100%;
+  }
+}

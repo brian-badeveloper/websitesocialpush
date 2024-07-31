@@ -14,6 +14,7 @@
 .input_phone_picker:focus-within,
 .input_phone_picker:active {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	background: var(--white) !important;
 }
 
 .input_phone_picker__label {
@@ -49,7 +50,7 @@
 }
 
 .input_phone_picker__field::placeholder {
-	color: var(--gray-silver-chalice);
+	color: var(--gray);
 }
 
 .input_phone_picker__addon {

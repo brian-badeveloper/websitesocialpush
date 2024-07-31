@@ -7,7 +7,7 @@ export interface InputProps {
   value?: string | number
   name?: string
   error?: boolean
-  type: 'text' | 'number' | 'email' | 'password'
+  type: 'text' | 'number' | 'email' | 'password' | 'hidden'
   size?: SizeType
   color?: string
   background?: string

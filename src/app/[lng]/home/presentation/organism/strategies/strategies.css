@@ -1,0 +1,183 @@
+.strategies {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0px 0px 120px;
+}
+
+.strategies__row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strategies__image {
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+  position: relative;
+  padding: 20px;
+  order: 1;
+}
+
+.strategies__text {
+  width: 100%;
+  max-width: 45%;
+  height: auto;
+  position: relative;
+  padding: 20px;
+  order: 2;
+}
+
+.strategies__text::after {
+  top: 50%;
+  left: -15%;
+  content: "";
+  width: 5px;
+  height: 540px;
+  position: absolute;
+  background-image: url('../../../../../../assets/images/line-marketing.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.strategies__image-src {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.strategies__subtitle {
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+
+.strategies__title {
+  font-family: var(--font-title);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+.strategies__paragraph {
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.strategies__options {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1440px) {
+  .strategies__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .strategies__title {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+  
+  .strategies__paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .strategies__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .strategies__title {
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+  
+  .strategies__paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+
+  .strategies {
+    padding: 0px 0px 80px;
+  }
+
+  .strategies__image {
+    width: 100%;
+    max-width: 45%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .strategies__text {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .strategies__text::after {
+    left: -6%;
+  }
+
+  .strategies__subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .strategies__title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .strategies__paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 765px) {
+
+  .strategies {
+     padding: 0px 0px 40px;
+  }
+  
+  .strategies__row {
+    justify-content: center;
+  }
+  .strategies__image {
+    max-width: 500px;
+    order: 2;
+  }
+  
+  .strategies__text {
+    max-width: 600px;
+    order: 1;
+  }
+
+  .strategies__text::after {
+    display: none;
+  }
+}

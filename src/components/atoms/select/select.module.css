@@ -6,7 +6,7 @@
 	font-family: var(--font-text);
 	font-size: 15px;
 	font-weight: 400;
-	color: var(--gray-silver-chalice);
+	color: var(--gray);
 	border: 2px solid var(--gray-silver-chalice);
 	border-radius: 10px;
 	background: transparent;
@@ -19,13 +19,14 @@
 
 .select::placeholder,
 .select option {
-	color: var(--gray-silver-chalice);
+	color: var(--gray);
 }
 
 .select:hover,
 .select:focus,
 .select:active {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	background: var(--white) !important;
 }
 
 .select_label {

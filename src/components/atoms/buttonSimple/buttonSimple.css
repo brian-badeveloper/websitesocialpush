@@ -1,0 +1,139 @@
+.button-simple {
+	width: auto;
+	max-width: var(--btn-auto);
+	height: auto;
+	position: relative;
+	outline: none;
+	background: transparent;
+	transition: background 0.3s ease-in-out;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--black);
+	gap: 5px 12px;
+}
+
+.button-simple__icon {
+	display: flex;
+	align-items: center;
+}
+
+.button-simple__icon svg {
+	transition: margin 0.3s ease-in-out;
+}
+
+.button-simple__icon svg,
+.button-simple__icon svg path {
+	fill: var(--black);
+}
+
+.button-simple:hover .button-simple__icon svg {
+	margin-left: -5px;
+	margin-right: 5px;
+}
+
+.button-simple__text {
+	font-family: var(--font-text);
+	font-size: var(--btn-size-sm);
+	font-weight: 500;
+	color: var(--white);
+}
+
+/* --- backgrounds --- */
+
+.button-simple.primary .button-simple__text {
+	color: var(--primary);
+}
+
+.button-simple.primary .button-simple__icon svg,
+.button-simple.primary .button-simple__icon svg path {
+	fill: var(--primary);
+}
+
+.button-simple.secondary .button-simple__text {
+	color: var(--secondary);
+}
+
+.button-simple.secondary .button-simple__icon svg,
+.button-simple.secondary .button-simple__icon svg path {
+	fill: var(--secondary);
+}
+
+.button-simple.tertiary .button-simple__text {
+	color: var(--scampi);
+}
+
+.button-simple.tertiary .button-simple__icon svg,
+.button-simple.tertiary .button-simple__icon svg path {
+	fill: var(--scampi);
+}
+
+.button-simple.blue .button-simple__text{
+	color: var(--blue);
+}
+
+.button-simple.blue .button-simple__icon svg,
+.button-simple.blue .button-simple__icon svg path {
+	fill: var(--blue);
+}
+
+.button-simple.black .button-simple__text{
+	color: var(--black);
+}
+
+.button-simple.black .button-simple__icon svg,
+.button-simple.black .button-simple__icon svg path {
+	fill: var(--black);
+}
+
+.button-simple.light .button-simple__text {
+	color: var(--white);
+}
+
+.button-simple.light .button-simple__icon svg,
+.button-simple.light .button-simple__icon svg path {
+	fill: var(--white);
+}
+
+/* --- sizes --- */
+
+.button-simple.sm {
+	max-width: var(--btn-width-sm);
+}
+
+.button-simple.md {
+	max-width: var(--btn-width-md);
+}
+
+.button-simple.lg {
+	max-width: var(--btn-width-lg);
+}
+
+.button-simple.xl {
+	max-width: var(--btn-width-xl);
+}
+
+.button-simple.auto {
+	max-width: var(--btn-width-auto);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1200px) {
+  .button-simple {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .button-simple {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.button-simple {
+    font-size: 14px !important;
+  }
+}

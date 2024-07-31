@@ -1,0 +1,11 @@
+import { IconProps } from '../domain/models/IconProps'
+
+const FacebookCircle = ({width, height, color}: IconProps) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M33.8687 16.5439C33.8687 24.7783 27.8257 31.6182 19.9233 32.8135V21.3252H23.7749L24.5054 16.5439H19.9233V13.4893C19.9233 12.1611 20.5874 10.8994 22.646 10.8994H24.7046V6.84863C24.7046 6.84863 22.8452 6.5166 20.9858 6.5166C17.2671 6.5166 14.8101 8.84082 14.8101 12.958V16.5439H10.6265V21.3252H14.8101V32.8135C6.90771 31.6182 0.931152 24.7783 0.931152 16.5439C0.931152 7.44629 8.30225 0.0751953 17.3999 0.0751953C26.4976 0.0751953 33.8687 7.44629 33.8687 16.5439Z" fill={color}/>
+    </svg>
+  )
+}
+
+export default FacebookCircle

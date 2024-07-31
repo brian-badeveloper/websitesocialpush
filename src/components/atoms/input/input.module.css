@@ -16,13 +16,14 @@
 }
 
 .input::placeholder {
-	color: var(--gray-silver-chalice);
+	color: var(--gray);
 }
 
 .input:hover,
 .input:focus,
 .input:active {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	background: var(--white) !important;
 }
 
 .input_label {

@@ -45,8 +45,8 @@ const useSendForm = (
   const translateParams = () => {
     for (let i = 0; i < CONTACT_FORM_PARAMS.length; i++) {
       const name = CONTACT_FORM_PARAMS[i].name
-      const label: labelForm = translation.FORM
-      if (name.toUpperCase() in translation.FORM) {
+      const label: labelForm = translation.LABEL
+      if (name.toUpperCase() in translation.LABEL) {
         CONTACT_FORM_PARAMS[i].placeholder = label[name.toUpperCase()] as string
       }
     }

@@ -1,0 +1,21 @@
+.likes {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 80px 0px;
+  z-index: 2;
+}
+
+/* ---- responsive ---- */
+                          
+@media screen and (max-width: 990px) {
+  .likes {
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .likes {
+    padding: 40px 0px;
+  }
+}

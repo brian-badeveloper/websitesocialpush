@@ -1,0 +1,162 @@
+.login-otp-form {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 500px;
+  position: relative;
+  background: var(--gradient-form);
+  border-radius: 17px;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.03), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.05), 0px 20px 13px 0px rgba(0, 0, 0, 0.06), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.07), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.09), 0px 100px 80px 0px rgba(0, 0, 0, 0.12);
+}
+
+.sb-show-main .login-otp-form {
+	width: auto;
+  max-width: 600px;
+}
+
+.login-otp-form__content {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  padding: 40px 40px;
+}
+
+.login-otp-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.login-otp-form__header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0px 12px;
+  margin-bottom: 40px;
+}
+
+.login-otp-form__header-action {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.login-otp-form__header-action a {
+  text-decoration: underline;
+}
+
+.login-otp-form__header-subtitle {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--gray-boulder);
+  margin-bottom: 10px;
+}
+
+.login-otp-form__header-title {
+  font-family: var(--font-text);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.login-otp-form__link {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  display: table;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.login-otp-form__group {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0px 12px;
+  margin-bottom: 30px;
+}
+
+.login-otp-form__group-md {
+  width: 100%;
+  max-width: 50%;
+}
+
+.login-otp-form__group--last {
+  margin-bottom: 0px;
+}
+
+.login-otp-form__group--full {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.code-career__form--code > .otp > div {
+  justify-content: center;
+}
+
+
+.code-career__link {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.code-career__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-otp-form__header-action {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .login-otp-form__header-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .login-otp-form__header-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .login-otp-form__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .login-otp-form__content {
+    padding: 40px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .login-otp-form {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .login-otp-form__group-md {
+    width: 100%;
+    max-width: 100%;
+  }
+}

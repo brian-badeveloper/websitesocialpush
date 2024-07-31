@@ -1,0 +1,72 @@
+.card-accordion {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card-accordion.top-bottom {
+  margin: 20px 0px;
+}
+
+.card-accordion.top {
+  margin-top: 20px;
+}
+
+.card-accordion.bottom {
+  margin-bottom: 20px;
+}
+
+.card-accordion__content {
+  width: 100%;
+  height: auto;
+  max-height: 0;
+  position: relative;
+  transition: max-height 0.4s ease-in-out, height 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+/* width */
+.card-accordion__content::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.card-accordion__content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.card-accordion__content::-webkit-scrollbar-thumb {
+  background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.card-accordion__content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.card-accordion.active .card-accordion__content {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.card-accordion__btn {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  display: table;
+}
+
+.card-accordion__btn.center {
+  margin: 0 auto;
+}
+
+.card-accordion__btn.left {
+  margin-right: auto;
+}
+
+.card-accordion__btn.right {
+  margin-left: auto;
+}

@@ -1,0 +1,67 @@
+.profile-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  position: relative;
+  background: var(--primary);
+  border-radius: 108px;
+  border: 4px solid var(--white);
+  padding: 2px 20px 2px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- backgrounds --- */
+
+.profile-image.primary {
+	background: var(--primary);
+}
+
+.profile-image.secondary {
+	background: var(--secondary);
+}
+
+.profile-image.tertiary {
+	background: var(--electric-violet);
+}
+
+.profile-image.blue {
+	background: var(--blue);
+}
+
+.profile-image.black {
+	background: var(--black);
+}
+
+.profile-image.light {
+	background: var(--white);
+  border-color: var(--black) !important;
+}
+
+.profile-image.light svg,
+.profile-image.light svg path {
+  fill: var(--black);
+}
+
+/* --- sizes --- */
+
+.profile-image.sm {
+	max-width: var(--btn-width-sm);
+}
+
+.profile-image.md {
+	max-width: var(--btn-width-md);
+}
+
+.profile-image.lg {
+	max-width: var(--btn-width-lg);
+}
+
+.profile-image.xl {
+	max-width: var(--btn-width-xl);
+}
+
+.profile-image.auto {
+	max-width: var(--btn-width-auto);
+}

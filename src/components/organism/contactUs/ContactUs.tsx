@@ -16,7 +16,7 @@ const ContactUs = ({lng, defaultLang}: ContactUsProps) => {
         <div className={styles.contact_us__row}>
           <div className={styles.contact_us__text}>
             <h2 className={styles.contact_us__title}>{translate.HOME.CONTACT_TITLE}</h2>
-            <p className={styles.contact_us__paragraph}>{translate.HOME.CONTACT_TEXT}</p>
+            <p className={styles.contact_us__paragraph}>{translate.HOME.CONTACT_PARAGRAPH}</p>
           </div>
           <div className={styles.contact_us__form}>
             <FormContact lng={lng} defaultLang={defaultLang} />

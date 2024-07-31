@@ -1,0 +1,82 @@
+.network-item {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  background: var(--white);
+  border: 2px solid var(--gray);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px 10px;
+  padding: 8px 20px;
+}
+
+.network-item:hover,
+.network-item.active  {
+  background: var(--gradient-network);
+}
+
+.network-item__icon {
+  position: relative;
+}
+
+.network-item__text {
+  max-width: 100%;
+  font-family: var(--font-text);
+  font-size: 14px;
+  color: var(--dark);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  transition: color 0.2s ease-in-out;
+  position: relative;
+}
+
+.network-item:hover .network-item__text,
+.network-item.active .network-item__text {
+ color: var(--white);
+}
+
+.network-item__icon svg {
+	margin-right: 5px;
+}
+
+.network-item__icon svg > g > path,
+.network-item__icon svg > path,
+.network-item__icon svg > rect {
+	transition: fill 0.3s ease-in-out;
+}
+
+.network-item:hover .network-item__icon svg > g > path,
+.network-item:hover .network-item__icon svg > path,
+.network-item:hover .network-item__icon svg > rect  {
+	fill: var(--white);
+}
+
+/* ---- Size Network ---- */
+
+.network-item.sm {
+  width: 100%;
+  max-width: 200px;
+}
+
+.network-item.md {
+  width: 100%;
+  max-width: 400px;
+}
+
+.network-item.lg {
+  width: 100%;
+  max-width: 600px;
+}
+
+.network-item.xl {
+  width: 100%;
+  max-width: 800px;
+}
+
+.network-item.auto {
+  width: 100%;
+  max-width: 100%;
+}

@@ -1,0 +1,447 @@
+.quote {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 80px 0px 180px;
+  z-index: 2;
+}
+
+.quote__content {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.quote__table {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 11px;
+  padding: 20px 50px;
+  background: var(--secondary);
+  z-index: 2;
+}
+
+.quote__table-item {
+  font-family: var(--font-text);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quote__text {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: var(--gradient-quote);
+  padding-left: 150px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  border-radius: 21px;
+  box-shadow: 0px 2.767256498336792px 4.455283164978027px 0px rgba(0, 0, 0, 0.03), 0px 6.650102138519287px 10.706664085388184px 0px rgba(0, 0, 0, 0.04), 0px 12.521552085876465px 20.159698486328125px 0px rgba(0, 0, 0, 0.05), 0px 22.3363094329834px 35.961456298828125px 0px rgba(0, 0, 0, 0.07), 0px 41.777610778808594px 67.26194763183594px 0px rgba(0, 0, 0, 0.08), 0px 100px 161px 0px rgba(0, 0, 0, 0.11);
+}
+
+.quote__text-content {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: relative;
+}
+
+.quote__text-icon {
+  top: -80px;
+  left: -90px;
+  position: absolute;
+}
+
+.quote__paragraph {
+  width: 100%;
+  height: auto;
+  font-family: var(--font-title);
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.quote__footer {
+  text-align: right;
+  font-family: var(--font-special);
+  font-size: 28px;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 1.3;
+  letter-spacing: -4px;
+  text-transform: capitalize;
+  color: var(--white);
+  opacity: 0.5;
+  padding-left: 50px;
+  padding-right: 15px;
+  position: relative;
+  display: table;
+}
+
+.quote__footer::before {
+  content: "";
+  width: 30px;
+  height: 8px;
+  background: var(--white);
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.quote__image {
+  top: 50%;
+  right: 100px;
+  width: 100%;
+  max-width: 430px;
+  height: calc(100% + 130px);
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.quote__image-src{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- backgrounds ---- */
+
+.quote.instagram .quote__text {
+  background: var(--gradient-quote);
+}
+
+.quote.instagram .quote__table {
+  background: var(--secondary);
+}
+
+.quote.facebook .quote__text {
+  background: var(--gradient-facebook);
+}
+
+.quote.facebook .quote__table {
+  background: var(--chathams-blue);
+}
+
+.quote.spotify .quote__text {
+  background: var(--gradient-spotify);
+}
+
+.quote.spotify .quote__table {
+  background: var(--dark-mine-shaft);
+}
+
+.quote.tiktok .quote__text {
+  background: var(--gradient-tiktok);
+}
+
+.quote.tiktok .quote__table {
+  background: var(--dark-mine-shaft);
+}
+
+.quote.youtube .quote__text {
+  background: var(--gradient-youtube);
+}
+
+.quote.youtube .quote__table {
+  background: var(--dark-mine-shaft);
+}
+
+.quote.linkedin .quote__text {
+  background: var(--gradient-linkedin);
+}
+
+.quote.linkedin .quote__table {
+  background: var(--dark-emperor-b);
+}
+
+.quote.twitch .quote__text {
+  background: var(--gradient-twitch);
+}
+
+.quote.twitch .quote__table {
+  background: var(--electric-violet);
+}
+
+.quote.soundcloud .quote__text {
+  background: var(--gradient-soundcloud);
+}
+
+.quote.soundcloud .quote__table {
+  background: var(--black);
+}
+
+.quote.threads .quote__text {
+  background: var(--gradient-threads);
+}
+
+.quote.threads .quote__table {
+  background: var(--dark-emperor-b);
+}
+
+.quote.twitter .quote__text {
+  background: var(--gradient-twitter);
+}
+
+.quote.twitter .quote__table {
+  background: var(--dark-tundora);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1440px) {
+  .quote__table {
+    width: 100%;
+    max-width: 250px;
+    top: -15px;
+    left: 20%;
+    border-radius: 11px;
+    padding: 20px 20px;
+  }
+
+  .quote__table-item {
+    font-size: 15px;
+  }
+
+  .quote__table-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .quote__text {
+    padding-left: 90px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .quote__text-content {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+  }
+  
+  .quote__image {
+    top: 50%;
+    right: 50px;
+    max-width: 40%;
+    height: calc(100% + 100px);
+  }
+
+  .quote__text-icon {
+    top: -50px;
+    left: -60px;
+  }
+
+  .quote__text-icon svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .quote__paragraph {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .quote__footer {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .quote__paragraph {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .quote__footer {
+    font-size: 23px;
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+}
+                          
+@media screen and (max-width: 990px) {
+  .quote {
+    padding: 20px 0px 80px;
+  }
+
+  .quote__table {
+    width: 100%;
+    max-width: 200px;
+    top: -15px;
+    left: 20%;
+    border-radius: 11px;
+    padding: 20px 20px;
+    gap: 10px;
+  }
+
+  .quote__text {
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .quote__text-icon {
+    top: -50px;
+    left: -40px;
+  }
+
+  .quote__text-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .quote__paragraph {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .quote__footer {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+
+  .quote__image {
+    top: 50%;
+    right: 30px;
+    max-width: 40%;
+    height: calc(100% + 50px);
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .quote {
+    padding: 20px 0px 60px;
+  }
+
+  .quote__table {
+    width: 100%;
+    max-width: 200px;
+    top: -15px;
+    left: 50%;
+    border-radius: 11px;
+    padding: 20px 20px;
+    gap: 10px;
+    transform: translateX(-50%);
+  }
+
+  .quote__text {
+    padding-left: 60px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-bottom: -120px;
+  }
+
+  .quote__text-content {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .quote__image {
+    top: inherit;
+    right: inherit;
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    transform: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+
+  .quote__image-src {
+    background: var(--gradient-quote);
+    border-radius: 15px;
+  }
+
+  .quote__paragraph {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .quote__footer {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+
+  .quote__footer::before {
+    display: none;
+  }
+
+  .quote.instagram .quote__image-src {
+    background: var(--gradient-quote);
+  }
+  
+  .quote.facebook .quote__image-src {
+    background: var(--gradient-facebook);
+  }
+  
+  .quote.spotify .quote__image-src {
+    background: var(--gradient-spotify);
+  }
+  
+  .quote.tiktok .quote__image-src {
+    background: var(--gradient-tiktok);
+  }
+    
+  .quote.youtube .quote__image-src {
+    background: var(--gradient-youtube);
+  }
+  
+  .quote.linkedin .quote__image-src {
+    background: var(--gradient-linkedin);
+  }
+  
+  .quote.twitch .quote__image-src {
+    background: var(--gradient-twitch);
+  }
+  
+  .quote.soundcloud .quote__image-src {
+    background: var(--gradient-soundcloud);
+  }
+  
+  .quote.threads .quote__image-src {
+    background: var(--gradient-threads);
+  }
+  
+  .quote.twitter .quote__image-src {
+    background: var(--gradient-twitter);
+  }
+  
+
+
+  .quote__image-src {
+    background: var(--gradient-quote);
+    border-radius: 15px;
+  }
+}

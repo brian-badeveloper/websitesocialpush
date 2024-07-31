@@ -20,16 +20,27 @@ const CONTACT_FORM_PARAMS:ValidateForm[] = [
   {
     'required' : true,
     'numeric' : true,
-    'name' : 'code_number',
-    'placeholder' : 'Código del País'
-  },
-  {
-    'required' : true,
-    'numeric' : true,
     'min' : 6,
     'max' : 12,
     'name' : 'phone_number',
     'placeholder' : 'Número de Teléfono'
+  },
+  {
+    'required' : true,
+    'name' : 'country',
+    'placeholder' : 'País'
+  },
+  {
+    'required' : true,
+    'numeric' : true,
+    'min' : 1,
+    'name' : 'code_country',
+    'placeholder' : 'Código del País'
+  },
+  {
+    'required' : true,
+    'name' : 'ip',
+    'placeholder' : 'IP'
   },
   {
     'required' : true,
@@ -44,7 +55,44 @@ const CONTACT_FORM_PARAMS:ValidateForm[] = [
   }
 ];
 
-const KYC_FORM_PARAMS:ValidateForm[] = [
+const LOGIN_FORM_PARAMS:ValidateForm[] = [
+  {
+    'required' : true,
+    'name' : 'username',
+    'placeholder' : 'Correo Electrónico o TPID'
+  },
+  {
+    'required' : true,
+    'name' : 'password',
+    'placeholder' : 'Contraseña'
+  }
+];
+
+const FORGOT_FORM_PARAMS:ValidateForm[] = [
+  {
+    'required' : true,
+    'email': true,
+    'name' : 'email',
+    'placeholder' : 'Correo Electrónico'
+  }
+];
+
+const PASSWORD_FORM_PARAMS:ValidateForm[] = [
+  {
+    'required' : true,
+    'name' : 'password',
+    'placeholder' : 'Contraseña'
+  },
+  {
+    'required' : true,
+    'equal' : true,
+    'field_equal' : 'password', 
+    'name' : 'password2',
+    'placeholder' : 'Confirmar Contraseña'
+  },
+];
+
+const REGISTER_FORM_PARAMS:ValidateForm[] = [
   {
     'required' : true,
     'name' : 'first_name',
@@ -57,31 +105,9 @@ const KYC_FORM_PARAMS:ValidateForm[] = [
   },
   {
     'required' : true,
-    'name' : 'id_type',
-    'placeholder' : 'Tipo de Identificación'
-  },
-  {
-    'required' : true,
-    'name' : 'id_number',
-    'placeholder' : 'Número de Identificación'
-  },
-  {
-    'required' : true,
-    'name' : 'id_document',
-    'file' : true,
-    'file_type' : '.png,.jpg,.doc,.docx,.pdf',
-    'placeholder' : 'Adjuntar Documento de Identidad'
-  },
-  {
-    'required' : true,
-    'name' : 'country',
-    'placeholder' : 'País'
-  },
-  {
-    'required' : true,
-    'numeric' : true,
-    'name' : 'code_number',
-    'placeholder' : 'Código del País'
+    'email' : true, 
+    'name' : 'email',
+    'placeholder' : 'Correo Electrónico'
   },
   {
     'required' : true,
@@ -93,25 +119,20 @@ const KYC_FORM_PARAMS:ValidateForm[] = [
   },
   {
     'required' : true,
-    'name' : 'province',
-    'placeholder' : 'Provincia o Región'
+    'name' : 'country',
+    'placeholder' : 'País'
   },
   {
     'required' : true,
-    'name' : 'city',
-    'placeholder' : 'Pueblo / Ciudad'
+    'name' : 'password',
+    'placeholder' : 'Contraseña'
   },
   {
     'required' : true,
-    'name' : 'address',
-    'placeholder' : 'Dirección'
-  },
-  {
-    'required' : true,
-    'name' : 'proof_address',
-    'file' : true,
-    'file_type' : '.png,.jpg,.doc,.docx,.pdf',
-    'placeholder' : 'Adjuntar Comprobante de Domicilio'
+    'equal' : true,
+    'field_equal' : 'password', 
+    'name' : 'password_confirm',
+    'placeholder' : 'Confirmar Contraseña'
   },
   {
     'required' : true,
@@ -121,7 +142,20 @@ const KYC_FORM_PARAMS:ValidateForm[] = [
   }
 ];
 
+const PLAN_CUSTOM_FORM_PARAMS:ValidateForm[] = [
+  {
+    'required' : true,
+    'numeric': true,
+    'name' : 'price',
+    'placeholder' : 'Precio'
+  },
+];
+
 export {
   CONTACT_FORM_PARAMS,
-  KYC_FORM_PARAMS
+  LOGIN_FORM_PARAMS,
+  FORGOT_FORM_PARAMS,
+  PASSWORD_FORM_PARAMS,
+  REGISTER_FORM_PARAMS,
+  PLAN_CUSTOM_FORM_PARAMS
 }

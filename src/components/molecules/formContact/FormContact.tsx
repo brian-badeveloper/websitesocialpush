@@ -52,7 +52,7 @@ const FormContact = ({
                 name="first_name"
                 onChange={onInput}
                 type="text"
-                placeholder={translate.FORM.FIRST_NAME}
+                placeholder={translate.LABEL.FIRST_NAME}
                 size="auto"
                 background="#FFF1EE"
                 border={0}
@@ -65,7 +65,7 @@ const FormContact = ({
                 name="last_name"
                 onChange={onInput}
                 type="text"
-                placeholder={translate.FORM.LAST_NAME}
+                placeholder={translate.LABEL.LAST_NAME}
                 size="auto"
                 background="#FFF1EE"
                 border={0}
@@ -78,7 +78,7 @@ const FormContact = ({
                 name="email"
                 onChange={onInput}
                 type="email"
-                placeholder={translate.FORM.EMAIL}
+                placeholder={translate.LABEL.EMAIL}
                 size="auto"
                 background="#FFF1EE"
                 border={0}
@@ -91,7 +91,7 @@ const FormContact = ({
                 name="phone_number"
                 onChange={onInput}
                 type="number"
-                placeholder={translate.FORM.PHONE_NUMBER}
+                placeholder={translate.LABEL.PHONE_NUMBER}
                 size="auto"
                 background="#FFF1EE"
                 border={0}
@@ -107,7 +107,7 @@ const FormContact = ({
               <Checkbox
                 name="policies"
                 onChange={onCheck}
-                label={translate.FORM.TERMS_TEXT}
+                label={translate.LABEL.TERMS_TEXT}
                 size={18}
                 colorActive="#FF735C"
                 color="#FF735C"
@@ -121,7 +121,7 @@ const FormContact = ({
                 size="auto"
                 textSize={18}
                 disable={buttonState || !formState.policies ? true : false}
-              >{translate.FORM.SEND_BTN}</Button>
+              >{translate.LABEL.SEND_BTN}</Button>
             </div>
           </div>
         </div>

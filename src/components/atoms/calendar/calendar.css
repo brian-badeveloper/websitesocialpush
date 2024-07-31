@@ -1,0 +1,93 @@
+.calendar {
+	width: auto;
+	max-width: var(--btn-auto);
+	height: auto;
+	position: relative;
+	outline: none;
+	background: transparent;
+	color: var(--white);
+	font-family: var(--font-text);
+	font-size: var(--btn-size-sm);
+	font-weight: 500;
+	transition: background 0.3s ease-in-out;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--black);
+	gap: 5px 12px;
+}
+
+.calendar.disable {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+
+/* --- backgrounds --- */
+
+.calendar.primary {
+	color: var(--primary);
+}
+
+.calendar.secondary {
+	color: var(--secondary);
+}
+
+.calendar.tertiary {
+	color: var(--scampi);
+}
+
+.calendar.blue {
+	color: var(--blue);
+}
+
+.calendar.black {
+	color: var(--black);
+}
+
+.calendar.light {
+	color: var(--white);
+}
+
+/* --- sizes --- */
+
+.calendar.sm {
+	max-width: var(--btn-width-sm);
+}
+
+.calendar.md {
+	max-width: var(--btn-width-md);
+}
+
+.calendar.lg {
+	max-width: var(--btn-width-lg);
+}
+
+.calendar.xl {
+	max-width: var(--btn-width-xl);
+}
+
+.calendar.auto {
+	max-width: var(--btn-width-auto);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1200px) {
+  .calendar {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .calendar {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.calendar {
+    font-size: 14px !important;
+  }
+}

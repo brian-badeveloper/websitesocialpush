@@ -14,7 +14,7 @@ const preview: Preview = {
       },
     },
     backgrounds: {
-      default: 'light',
+      default: 'default',
       values: [
         {
           name: 'light',

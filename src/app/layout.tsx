@@ -6,7 +6,7 @@ import { LayoutParams } from '@/models/interfaces/ParamsProps'
 import { InitializeLanguage } from '@/helpers/language';
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Social Push",
   description: "",
 };
 

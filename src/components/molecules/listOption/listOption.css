@@ -1,0 +1,29 @@
+.list-option {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.list-option__icon {
+  left: 0px;
+  position: absolute;
+}
+
+@media screen and (max-width: 990px) {
+  .list-option.center {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .list-option.center .list-option__icon {
+    left: inherit;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    top: 5px;
+  }
+}

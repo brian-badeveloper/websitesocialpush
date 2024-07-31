@@ -7,6 +7,10 @@ const languages = {
 } as const
 
 export type LanguagesType = keyof typeof languages
+export type LanguagesDataType = typeof languages['en']
 
 const getLanguage = (lang: LanguagesType) => languages[lang]
-export default getLanguage
+export {
+  getLanguage as default,
+  languages
+}

@@ -2,7 +2,9 @@
 							Fonts
 ---------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:wght@400;700&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&&family=Sonsie+One&display=swap');
+
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,300,600,400,700&display=swap');
 
 /*---------------------------------
 							Globals
@@ -12,38 +14,77 @@
 
 	/* ---- Fonts ---- */
 
-	--font-text:'Kodchasan', sans-serif;
-	--font-text-special:'Inter', sans-serif;
+	--font-title: 'General Sans', sans-serif;
+	--font-text: 'Poppins', sans-serif;
+	--font-special: 'Sonsie One', cursive;
 
 	/* ---- Colors ---- */
 
-	--primary: #FF735C;
-	--secondary: #FFF1EE;
+	--primary: #706FE5;
+	--secondary: #FF6D6D;
 	--tertiary: #474698;
 	--main: #1E1F4B;
 	--white: #fff;
+	-orange: #F63;
+	--orchid: #D777CD;
+	--lavender: #C37CE4;
+	--red: #FF0000;
+	--scampi: #6665AD;
+	--cornflower-lilac: #FFA5A5;
+	--danube: #77A9D7;
+	--perano: #BCCBF2;
+	--blue: #349eff;
 	--blue-ribbon: #0066FF;
-	--gray: #EEE;
+	--blue-bell: #9291C9;
+	--chathams-blue: #103B64;
+	--electric-violet: #9F44FE;
+	--picton-blue: #3CC3E9;
+	--gray: #CCCCCC;
 	--gray-light: #FAFAFA;
 	--gray-init: #868686;
 	--gray-edward: #9fa7a8;
-	--gray-silver: #929292;
-	--gray-silver-chalice: #9D9D9D;
+	--gray-alto: #D8D8D8;
+	--gray-silver: #C8C8C8;
+	--gray-silver-chalice: #A8A6A6;
+	--gray-boulder: #757575;
+	--gray-dark: #868686;
+	--gray-dark-b: #8D8D8D;
 	--gray-dove: #707070;
 	--slate-gray: #64748B;
 	--black: #000;
 	--dark: #333;
 	--dark-scorpion: #585858;
 	--dark-outer-space: #212828;
+	--moody-blue: #7877D7;
+	--ship-cove: #8180C4;
 
 	/* ---- gradients ---- */
 
 	--banner-modal-gradient: linear-gradient(95deg, #465097 46.12%, #000 116.5%);
+	--gradient-light: linear-gradient(140deg, #FFF 0%, #CCCCF6 100%);
+	--gradient-color: linear-gradient(140deg, #47469B 0%, #B8B8F5 100%);
+	--gradient-network: linear-gradient(129deg, #48479C 0%, rgba(8, 6, 199, 0.53) 58.85%, #3532C2 99.48%);
+	--gradient-followers: linear-gradient(68deg, rgba(71, 70, 155, 0.95) 0%, rgba(71, 70, 155, 0.7) 100%);
+	--gradient-contact-us: linear-gradient(68deg, rgba(71, 70, 155, 0.95) 0%, rgba(71, 70, 155, 0.7) 100%);
+	--gradient-card: linear-gradient(163deg, #FFF 0%, #D9D9F9 91.14%);
+	--gradient-footer: linear-gradient(150deg, rgba(72, 71, 156, 1) 0%, rgba(72, 71, 156, 0.2) 100%);
+	--gradient-text: linear-gradient(144deg, #FFF 0%, rgba(255, 255, 255, 0.3) 100%);
+	--gradient-quote: linear-gradient(160deg, rgba(72, 71, 156, 1) 0%,  #FFF 100%);
+	--gradient-form: linear-gradient(156deg, #FFF 0%, #D0D0F7 100%);
+	--gradient-spotify: linear-gradient(156deg, #327E2B 0%, #010D00 100%);
+	--gradient-tiktok: linear-gradient(156deg, #259B8D 0%, #B21DAC 100%);
+	--gradient-twitch: linear-gradient(156deg, #4B4B4F 0%, #FFF 100%);
+	--gradient-linkedin: linear-gradient(156deg, #243D5C 0%, #FFF 100%);
+	--gradient-youtube: linear-gradient(156deg, #9B2525 0%, #010D00 100%);
+	--gradient-soundcloud: linear-gradient(152deg, #F36600 0%, #000 100%);
+	--gradient-facebook: linear-gradient(156deg, #25629B 0%, #321DB2 100%);
+	--gradient-twitter: linear-gradient(156deg, #040A0F 0%, #88C6FF 100%);
+	--gradient-threads: linear-gradient(156deg, #000 0%, #FFF 100%);
 
 
 	/* ---- Size and Width Buttons ---- */
 
-	--btn-width-sm: 190px;
+	--btn-width-sm: 240px;
 	--btn-width-md: 400px;
 	--btn-width-lg: 600px;
 	--btn-width-xl: 800px;
@@ -70,6 +111,22 @@ body {
 	background: var(--white);
 	font-family: var(--font-text);
 	position: relative;
+	z-index: 2;
+}
+
+body::before {
+	content: "";
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background: var(--gradient-light);
+	position: fixed;
+	z-index: -1;
+}
+
+body.sb-show-main::before {
+	display: none;
 }
 
 main {
@@ -195,4 +252,52 @@ img {
 	flex-wrap: wrap;
 	margin-left: -20px;
 	margin-right: -20px;
+}
+
+.loading {
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: var(--white);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: currentColor;
+  color: var(--primary);
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after, .loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s  0.45s  linear infinite alternate;
+}
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0%   { height: 48px} 
+  100% { height: 4px}
 }

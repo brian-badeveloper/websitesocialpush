@@ -1,0 +1,130 @@
+.status {
+	width: auto;
+	max-width: var(--btn-auto);
+	height: auto;
+	position: relative;
+	outline: none;
+	background: var(--white);
+	transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+	border: 1px solid var(--white);
+	border-radius: 5px;
+	padding: 5px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--black);
+	gap: 5px 5px;
+}
+
+.status__icon {
+	display: flex;
+	align-items: center;
+}
+
+.status__icon svg {
+	transition: margin 0.3s ease-in-out;
+}
+
+.status__icon svg,
+.status__icon svg path {
+	fill: var(--black);
+}
+
+.status:hover {
+	transform: scale(1.1);
+}
+
+.status__text {
+	font-family: var(--font-text);
+	font-size: var(--btn-size-sm);
+	font-weight: 500;
+	color: var(--black);
+}
+
+/* --- backgrounds --- */
+
+.status.paid {
+	background: var(--primary);
+	border-color: var(--primary);
+}
+
+.status.paid .status__text {
+	color: var(--white);
+}
+
+.status.paid .status__icon svg,
+.status.paid .status__icon svg path {
+	fill: var(--white);
+}
+
+.status.unpaid {
+	background: transparent;
+	border-color: var(--secondary);
+}
+
+.status.unpaid .status__text {
+	color: var(--black);
+}
+
+.status.unpaid .status__icon svg,
+.status.unpaid .status__icon svg path {
+	fill: var(--secondary);
+}
+
+
+.status.cancel {
+	background: var(--red);
+	border-color: var(--red);
+}
+
+.status.cancel .status__text {
+	color: var(--white);
+}
+
+.status.cancel .status__icon svg,
+.status.cancel .status__icon svg path {
+	fill: var(--white);
+}
+
+/* --- sizes --- */
+
+.status.sm {
+	max-width: var(--btn-width-sm);
+}
+
+.status.md {
+	max-width: var(--btn-width-md);
+}
+
+.status.lg {
+	max-width: var(--btn-width-lg);
+}
+
+.status.xl {
+	max-width: var(--btn-width-xl);
+}
+
+.status.auto {
+	max-width: var(--btn-width-auto);
+}
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1200px) {
+  .status {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .status {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.status {
+    font-size: 14px !important;
+  }
+}

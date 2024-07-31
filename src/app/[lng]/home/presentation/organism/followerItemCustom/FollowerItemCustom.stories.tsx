@@ -45,7 +45,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
   },
 } satisfies Meta<typeof FollowerItemCustom>
 
@@ -54,6 +57,7 @@ type Story = StoryObj<typeof meta>
 
 export const followerItemCustom: Story = {
   args: {
-    ...customProps
+    lng: 'es',
+    item: customProps
   },
 }

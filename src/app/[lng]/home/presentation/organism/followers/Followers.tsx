@@ -10,7 +10,7 @@ import userPlus from '@/assets/images/user.svg'
 import { FollowersProps } from './FollowersProps'
 import FollowerItems from '../followerItems/FollowerItems'
 
-const Followers = ({title, text, textTwo, textBtn, textBtnActive, dataCards}: FollowersProps) => {
+const Followers = ({lng, title, text, textTwo, textBtn, textBtnActive, dataCards}: FollowersProps) => {
 
   const [show, setShow] = useState<boolean>(false)
   
@@ -28,7 +28,7 @@ const Followers = ({title, text, textTwo, textBtn, textBtnActive, dataCards}: Fo
           <Image src={userPlus} alt="Seguidores" />
         </Header>
 
-        <FollowerItems dataCards={dataCards} show={show} />
+        <FollowerItems dataCards={dataCards} show={show} lng={lng} />
         
         <div className="followers__content">
           <p className="followers__paragraph">{text}</p>

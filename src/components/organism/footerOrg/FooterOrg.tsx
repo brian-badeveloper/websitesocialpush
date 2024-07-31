@@ -28,16 +28,16 @@ const FooterOrg = ({lng, defaultLang}: FooterOrgProps) => {
           <div className="footer__menu">
             <ul className="footer__menu-items">
               <li className="footer__menu-item">
-                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link">{translate.FOOTERORG.FOOTER_LINK_1}</a>
+                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link" data-target="false">{translate.FOOTERORG.FOOTER_LINK_1}</a>
               </li>
               <li className="footer__menu-item">
-                <a href={`/${lng}/legals/policies`} className="footer__menu-link">{translate.FOOTERORG.FOOTER_LINK_2}</a>
+                <a href={`/${lng}/legals/policies`} className="footer__menu-link" data-target="false">{translate.FOOTERORG.FOOTER_LINK_2}</a>
               </li>
               <li className="footer__menu-item">
-                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link">{translate.FOOTERORG.FOOTER_LINK_3}</a>
+                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link" data-target="true">{translate.FOOTERORG.FOOTER_LINK_3}</a>
               </li>
               <li className="footer__menu-item">
-                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link">{translate.FOOTERORG.FOOTER_LINK_4}</a>
+                <a href={`/${lng}/legals/terms-and-conditions`} className="footer__menu-link" data-target="true">{translate.FOOTERORG.FOOTER_LINK_4}</a>
               </li>
               <li className="footer__menu-item">
                 <a 
@@ -47,6 +47,7 @@ const FooterOrg = ({lng, defaultLang}: FooterOrgProps) => {
                     onAction(lng,'contactus','/')
                   }}
                   className="footer__menu-link"
+                  data-target="true"
                 >{translate.FOOTERORG.FOOTER_LINK_5}</a>
               </li>
             </ul>

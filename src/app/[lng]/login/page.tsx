@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 import { SearchParams } from '@/models/interfaces/ParamsProps'
 import LoginView from './presentation/organism/loginView/LoginView'
 
-const HomePage = ({ params: { lng } }: SearchParams) => {
+const LoginPage = ({ params: { lng } }: SearchParams) => {
   return (
     <LoginView lng={lng} />
   )
 }
 
-export default HomePage
+export default LoginPage

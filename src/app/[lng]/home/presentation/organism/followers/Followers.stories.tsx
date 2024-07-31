@@ -13,7 +13,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    } 
   },
 } satisfies Meta<typeof Followers>
 
@@ -27,6 +30,7 @@ export const followers: Story = {
     textTwo: "Si necesitas un plan personalizado escríbenos",
     textBtn: "Plan Personalizado",
     textBtnActive: "Ocultar Plan",
-    dataCards: followersData
+    dataCards: followersData,
+    lng: 'es'
   },
 }

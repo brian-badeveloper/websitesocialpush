@@ -13,7 +13,11 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
+    
   },
 } satisfies Meta<typeof LikeItem>
 
@@ -22,6 +26,7 @@ type Story = StoryObj<typeof meta>
 
 export const likeItem: Story = {
   args: {
-    ...likesData[0]
+    lng: 'es',
+    item: likesData[0]
   },
 }

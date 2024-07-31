@@ -1,5 +1,10 @@
+import { LanguageParams } from "@/models/interfaces/LanguageProps"
 import { BackgroundType } from "@/models/types/BackgroundType"
 import { NetworkType } from "@/models/types/NetworkType"
+
+export interface PlanItemParams extends LanguageParams {
+  item: PlanItemProps
+}
 
 export interface PlanItemProps {
   id: string | null

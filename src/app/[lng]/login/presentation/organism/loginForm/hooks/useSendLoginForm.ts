@@ -98,7 +98,7 @@ const useSendLoginForm = (lng: LanguagesType, initialForm: LoginFormParams = {})
 
           return setTimeout(() => {
             localStorage.removeItem('checkout')
-            router.replace(redirect ? `/${lng}${redirect}` : `/${lng}/dashboard`)
+            router.replace(redirect ? `/${lng}${redirect}` : `/${lng}/dashboard`, {scroll: false})
           }, 2000)
         }
         

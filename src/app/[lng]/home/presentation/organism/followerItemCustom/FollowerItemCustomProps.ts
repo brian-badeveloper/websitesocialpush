@@ -1,4 +1,9 @@
+import { LanguageParams } from "@/models/interfaces/LanguageProps"
 import { NetworkType } from "@/models/types/NetworkType"
+
+export interface FollowerItemCustomParams extends LanguageParams {
+  item: FollowerItemCustomProps
+}
 
 export interface FollowerItemCustomProps {
   id: string | null

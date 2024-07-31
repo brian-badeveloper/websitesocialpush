@@ -5,15 +5,15 @@ import './followerItemCustom.css'
 import Card from '@/components/organism/card/Card';
 import CardHeader from '@/components/atoms/cardHeader/CardHeader';
 import CardValue from '@/components/molecules/cardValue/CardValue';
-import { FollowerItemCustomProps } from './FollowerItemCustomProps';
+import { FollowerItemCustomParams } from './FollowerItemCustomProps';
 import Button from '@/components/atoms/button/Button';
 import Input from '@/components/atoms/input/Input';
 import useFollowerItemCustom from './useFollowerItemCustom';
 import { BackgroundType } from '@/models/types/BackgroundType';
 
-const FollowerItemCustom = ({...props}: FollowerItemCustomProps) => {
+const FollowerItemCustom = ({lng, item}: FollowerItemCustomParams) => {
   
-  const { input, onInput, onAddProduct, translate, language } = useFollowerItemCustom('', props)
+  const { input, onInput, onAddProduct, translate, language } = useFollowerItemCustom(lng, '', item)
   
   return (
     <div className="follower-item-custom__item follower-item-custom__item--center">
@@ -34,20 +34,20 @@ const FollowerItemCustom = ({...props}: FollowerItemCustomProps) => {
                 5: 'blue',
                 6: 'dark',
                 default: 'Primary'
-              }[props.config.priority] as BackgroundType
+              }[item.config.priority] as BackgroundType
             }
             size={16}
-            title={props.i18n[language].title}
+            title={item.i18n[language].title}
             type="color"
             orientation="center"
           />
           <div className="card__content">
             <CardValue
-              currency={props.config.currency}
-              paragraph={props.i18n[language].subText}
+              currency={item.config.currency}
+              paragraph={item.i18n[language].subText}
               price={input !== '' ? input : 0}
-              symbol={props.config.symbol}
-              title={props.i18n[language].text}
+              symbol={item.config.symbol}
+              title={item.i18n[language].text}
             />
             <div className="card__form">              
               <Input

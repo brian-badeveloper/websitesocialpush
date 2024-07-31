@@ -3,15 +3,15 @@ import './followerItem.css'
 import Card from '@/components/organism/card/Card'
 import CardHeader from '@/components/atoms/cardHeader/CardHeader'
 import CardValue from '@/components/molecules/cardValue/CardValue'
-import { FollowerItemProps } from './FollowerItemProps'
+import { FollowerItemParams } from './FollowerItemProps'
 import Button from '@/components/atoms/button/Button'
 import ListOption from '@/components/molecules/listOption/ListOption'
 import useFollowerItem from './useFollowerItem'
 import { BackgroundType } from '@/models/types/BackgroundType'
 
-const FollowerItem = ({...props}: FollowerItemProps) => {
+const FollowerItem = ({lng, item}: FollowerItemParams) => {
 
-  const { language, onAddProduct, translate } = useFollowerItem(props)
+  const { language, onAddProduct, translate} = useFollowerItem(lng,item)
 
   return (
     <div className="follower-item">
@@ -32,24 +32,24 @@ const FollowerItem = ({...props}: FollowerItemProps) => {
                 5: 'blue',
                 6: 'dark',
                 default: 'Primary'
-              }[props.config.priority] as BackgroundType
+              }[item.config.priority] as BackgroundType
             }
             size={16}
-            title={props.i18n[language].title}
+            title={item.i18n[language].title}
             type="color"
             orientation="center"
           />
           <div className="card__content">
             <CardValue
-              currency={props.config.currency}
-              paragraph={props.i18n[language].subText}
-              price={props.config.price}
-              symbol={props.config.symbol}
-              title={props.i18n[language].text}
+              currency={item.config.currency}
+              paragraph={item.i18n[language].subText}
+              price={item.config.price}
+              symbol={item.config.symbol}
+              title={item.i18n[language].text}
             />
             <ul className="card__list">
               {
-                props.i18n[language]?.options?.map((li, key) => (
+                item.i18n[language]?.options?.map((li, key) => (
                   <ListOption 
                     icon="CircleCheck" 
                     text={li} 

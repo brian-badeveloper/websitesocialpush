@@ -113,7 +113,8 @@
   color: var(--white);
 }
 
-.footer__menu-link:hover {
+.footer__menu-link:hover,
+.footer__menu-link.active {
   text-decoration: underline;
 }
 

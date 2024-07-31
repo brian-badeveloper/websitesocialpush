@@ -3,14 +3,14 @@ import './planItem.css'
 import Card from '@/components/organism/card/Card';
 import CardHeader from '@/components/atoms/cardHeader/CardHeader';
 import CardValue from '@/components/molecules/cardValue/CardValue';
-import { PlanItemProps } from './PlanItemProps';
+import { PlanItemParams } from './PlanItemProps';
 import Button from '@/components/atoms/button/Button';
 import ListOption from '@/components/molecules/listOption/ListOption';
 import usePlanItem from './usePlanItem';
 
-const PlanItem = ({...props}: PlanItemProps) => {
+const PlanItem = ({lng, item}: PlanItemParams) => {
 
-  const { language, onAddProduct, translate } = usePlanItem(props)
+  const { language, onAddProduct, translate } = usePlanItem(lng,item)
 
   return (
     <div className="plan-item">
@@ -24,20 +24,20 @@ const PlanItem = ({...props}: PlanItemProps) => {
           <CardHeader
             bgStyle={'primary'}
             size={20}
-            title={props.i18n[language].title}
+            title={item.i18n[language].title}
             type="color"
             orientation="center"
           />
           <div className="card__content">
             <CardValue
-              currency={props.i18n[language].type_time}
-              price={props.config.price}
-              symbol={props.config.symbol}
-              subtitle={props.i18n[language].text}
+              currency={item.i18n[language].type_time}
+              price={item.config.price}
+              symbol={item.config.symbol}
+              subtitle={item.i18n[language].text}
             />
             <ul className="card__list">
               {
-                props.i18n[language].options.map((li, key) => (
+                item.i18n[language].options.map((li, key) => (
                   <ListOption 
                     icon="CircleCheck" 
                     text={li} 

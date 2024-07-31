@@ -1,0 +1,164 @@
+.register-view {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  position: relative;
+  padding: 80px 0px;
+}
+
+.register-view__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.register-view__card {
+  width: 100%;
+  max-width: 61.66%;
+  height: auto;
+  position: relative;
+  padding: 30px;
+  background: var(--ship-cove);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  order: 1;
+}
+
+.register-view__card-content {
+  width: 100%;
+  height: auto;
+  min-height: 560px;
+  position: relative;
+  padding: 30px;
+  background-image: url('../../../../../../assets/images/register.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.register-view__card-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.register-view__card-title--mb {
+  margin-bottom: 40px;
+}
+
+.register-view__card-paragraph {
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.8;
+  color: var(--white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.register-view__form {
+  width: 100%;
+  max-width: 38.33%;
+  height: auto;
+  position: relative;
+  order: 2;
+}
+
+@media screen and (max-width: 1440px) {
+  .register-view__card {
+    max-width: 55%;
+  }
+
+  .register-view__form {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .register-view__card {
+    max-width: 45%;
+  }
+
+  .register-view__form {
+    max-width: 55%;
+  }
+
+  .register-view__card-title {
+    font-size: 38px;
+    max-width: 250px;
+    height: auto;
+  }
+  .register-view__card-paragraph {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 990px) {
+  .register-view {
+    padding: 80px 0px;
+  }
+
+  .register-view__card {
+    max-width: 45%;
+  }
+
+  .register-view__form {
+    max-width: 55%;
+  }
+
+  .register-view__card-title {
+    font-size: 30px;
+    max-width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 765px) {
+  .register-view {
+    padding: 50px 0px;
+  }
+
+  .register-view__row {
+    justify-content: center;
+  }
+
+  .register-view__card {
+    max-width: 600px;
+    border-radius: 20px;
+    order: 2;
+  }
+
+  .register-view__card-content {
+    min-height: 320px;
+    padding: 30px;
+  }
+
+  .register-view__form {
+    max-width: 600px;
+    padding-bottom: 40px;
+    order: 1;
+  }
+
+  .register-view__card-title {
+    font-size: 25px;
+    max-width: 200px;
+    height: auto;
+  }
+}

@@ -9,7 +9,7 @@ import emojinKiss from '@/assets/images/emojin-kiss.svg'
 import { LikesProps } from './LikesProps'
 import LikeItems from '../likeItems/LikeItems'
 
-const Likes = ({title, text, dataCards}: LikesProps) => {
+const Likes = ({lng, title, text, dataCards}: LikesProps) => {
 
   return (
     <section className="likes">
@@ -23,7 +23,7 @@ const Likes = ({title, text, dataCards}: LikesProps) => {
           <Image src={emojinKiss} alt="Likes" />
         </Header>
 
-        <LikeItems dataCards={dataCards} />
+        <LikeItems lng={lng} dataCards={dataCards} />
       </div>
     </section>
   )

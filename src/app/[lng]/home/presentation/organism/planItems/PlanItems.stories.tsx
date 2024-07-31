@@ -13,7 +13,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
   },
 } satisfies Meta<typeof PlanItems>
 
@@ -22,6 +25,7 @@ type Story = StoryObj<typeof meta>
 
 export const planItems: Story = {
   args: {
+    lng: 'es',
     dataCards: plansData
   },
 }

@@ -44,7 +44,7 @@ const onLink = ({lng, link}: Links) => {
 const activeLinks = () => {
   const URL = window.location.href
   const menu = document.querySelectorAll(".navbar__menu_items a")
-  const footer = document.querySelectorAll('.footer__links a')
+  const footer = document.querySelectorAll('.footer__menu-items a')
   
   menu.forEach((item, key) => {
     const element: HTMLAnchorElement = item as HTMLAnchorElement
@@ -70,10 +70,17 @@ const onActiveLinks = () => {
 }
 
 
+const onRedirectExternal = (url: string) => {
+  if (window) {
+    return window.open(url)
+  }
+}
+
 export {
   onDetectRedirect,
   onRedirect,
   onActionRedirect,
   onLink,
-  onActiveLinks
+  onActiveLinks,
+  onRedirectExternal
 }

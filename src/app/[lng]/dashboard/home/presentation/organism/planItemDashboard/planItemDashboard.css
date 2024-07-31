@@ -1,0 +1,42 @@
+.plan-item-dashboard {
+  width: 100%;
+  max-width: 30%;
+  height: auto;
+  position: relative;
+  padding: 30px 20px;
+}
+
+
+/* ---- responsive ---- */
+
+@media screen and (max-width: 1440px) {
+  .plan-item-dashboard {
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .plan-item-dashboard {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .plan-item-dashboard {
+    max-width: 50%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .plan-item-dashboard {
+    max-width: 400px;
+    padding: 20px;
+  }  
+}
+
+@media screen and (max-width: 475px) {
+  .plan-item-dashboard {
+    max-width: 100%;
+  }
+}

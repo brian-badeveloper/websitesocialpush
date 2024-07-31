@@ -1,17 +1,18 @@
 import { MouseEvent, MouseEventHandler, useContext, useEffect, useState } from 'react'
 import { SiteContext } from '@/context/SiteContext'
 import { useRouter } from 'next/navigation'
+import getLanguage, { LanguagesType } from '@/models/i18n'
 
-const useActionNavbarOrg = (cartNumer: number = 0) => {
-  const { language, getLanguages, changeLang, getState, logout, onAlert, onAlertStatus, cartState, quantityCart } = useContext(SiteContext)
+const useActionNavbarOrg = (lng: LanguagesType, cartNumer: number = 0) => {
+  const { getState, logout, onAlert, onAlertStatus, cartState, quantityCart } = useContext(SiteContext)
   const [quantity, setQuantity] = useState<number>(cartNumer)
   const router = useRouter()
-  const translate = getLanguages()
+  const translate = getLanguage(lng)
 	const getStateLogin = getState()
 
   useEffect(() => {
     onAlertStatus(false)
-  },[language])
+  },[lng])
 
   useEffect(() => {
     setQuantity(quantityCart)
@@ -23,15 +24,12 @@ const useActionNavbarOrg = (cartNumer: number = 0) => {
     onAlert({status: true, messages: [translate.MESSAGE.LOGIN_CLOSE], type: 'success'})
     
     setTimeout(() => {
-      router.replace(`/${language}/`)
+      router.replace(`/${lng}/`, {scroll: false})
       onAlert({status: false, messages: [], type: 'danger'})
     }, 2000);
 	}
 
   return {
-    language,
-    getLanguages,
-    changeLang,
     onLogout,
     translate,
     getStateLogin,

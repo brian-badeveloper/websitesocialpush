@@ -5,11 +5,13 @@ import { SiteContext } from '@/context/SiteContext';
 import { Errors } from '@/helpers/validateForm';
 import { PLAN_CUSTOM_FORM_PARAMS } from '@/models/schemas/validateForm';
 import { labelForm } from '@/models/interfaces/ValidateForm';
+import getLanguage, { LanguagesType } from '@/models/i18n';
 
-const useFollowerItemCustom = (initialForm:FollowerItemCustomInput = '', followerItem: FollowerItemCustomProps) => {
+const useFollowerItemCustom = (lng: LanguagesType,initialForm:FollowerItemCustomInput = '', followerItem: FollowerItemCustomProps) => {
   const [input, setInput] = useState<FollowerItemCustomInput>(initialForm);
-  const { addCart, onAlertStatus, onAlert, language, getLanguages } = useContext(SiteContext)
-  const translate = getLanguages()
+  const { addCart, onAlertStatus, onAlert } = useContext(SiteContext)
+  const translate = getLanguage(lng)
+  const language = lng
 
   const format = (num:number) => {
     const nf = new Intl.NumberFormat("en-US");
@@ -36,7 +38,7 @@ const useFollowerItemCustom = (initialForm:FollowerItemCustomInput = '', followe
 
   useEffect(() => {
     onAlertStatus(false)
-  },[language])
+  },[lng])
 
   const onAddProduct = () => {
     translateParams()
@@ -44,7 +46,7 @@ const useFollowerItemCustom = (initialForm:FollowerItemCustomInput = '', followe
     let messages = Errors({
       params: PLAN_CUSTOM_FORM_PARAMS, 
       data: {price: input},
-      lang: language
+      lang: lng
     })
     let price:number = input as number
     

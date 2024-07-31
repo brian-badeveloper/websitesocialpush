@@ -1,14 +1,16 @@
 import { useContext, useEffect } from 'react'
 import { SiteContext } from '@/context/SiteContext'
 import { LikeItemProps } from './LikeItemProps'
+import getLanguage, { LanguagesType } from '@/models/i18n'
 
-const useLikeItem = (likeItem: LikeItemProps) => {
-  const { language, getLanguages, addCart, onAlert, onAlertStatus } = useContext(SiteContext)
-  const translate = getLanguages()
+const useLikeItem = (lng: LanguagesType, likeItem: LikeItemProps) => {
+  const { addCart, onAlert, onAlertStatus } = useContext(SiteContext)
+  const translate = getLanguage(lng)
+  const language = lng
 
   useEffect(() => {
     onAlertStatus(false)
-  },[language])
+  },[lng])
 
   const onAddProduct = () => {
     addCart({

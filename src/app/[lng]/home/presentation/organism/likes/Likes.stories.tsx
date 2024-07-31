@@ -13,7 +13,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
   },
 } satisfies Meta<typeof Likes>
 
@@ -24,6 +27,7 @@ export const likes: Story = {
   args: {
     title: "Instagram likes premium de inmediato.",
     text: "Obtén me gusta reales en tus posts y aumenta tu índice de alcance.",
-    dataCards: likesData
+    dataCards: likesData,
+    lng: 'es'
   },
 }

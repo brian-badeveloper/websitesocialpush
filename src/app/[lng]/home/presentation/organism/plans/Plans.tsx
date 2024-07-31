@@ -9,7 +9,7 @@ import bars from '@/assets/images/bars.svg'
 import { PlansProps } from './PlansProps'
 import PlanItems from '../planItems/PlanItems'
 
-const Plans = ({title, text, dataCards}: PlansProps) => {
+const Plans = ({lng, title, text, dataCards}: PlansProps) => {
 
   return (
     <section className="plans">
@@ -23,7 +23,7 @@ const Plans = ({title, text, dataCards}: PlansProps) => {
           <Image src={bars} alt="plans" />
         </Header>
 
-        <PlanItems dataCards={dataCards} />
+        <PlanItems dataCards={dataCards} lng={lng} />
       </div>
     </section>
   )

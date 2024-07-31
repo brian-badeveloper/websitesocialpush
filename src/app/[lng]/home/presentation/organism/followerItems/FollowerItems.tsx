@@ -5,7 +5,7 @@ import FollowerItem from '../followerItem/FollowerItem';
 import FollowerItemCustom from '../followerItemCustom/FollowerItemCustom';
 import useFollowerItems from './useFollowerItems';
 
-const FollowerItems = ({dataCards, show}: FollowerItemsProps) => {
+const FollowerItems = ({lng, dataCards, show}: FollowerItemsProps) => {
   
   const { customProps } = useFollowerItems()
 
@@ -14,13 +14,14 @@ const FollowerItems = ({dataCards, show}: FollowerItemsProps) => {
       <div className="follower-items__row">
       {
         dataCards.map((item, key) => (
-            <FollowerItem {...item} key={`follower-item-${key}`} />
+            <FollowerItem item={item} lng={lng} key={`follower-item-${key}`} />
         ))
       }
       {
         show && (
           <FollowerItemCustom
-            {...customProps}
+            item={customProps}
+            lng={lng}
           />
         )
       }

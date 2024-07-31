@@ -1,14 +1,16 @@
 import { useContext, useEffect } from 'react'
 import { SiteContext } from '@/context/SiteContext'
 import { PlanItemProps } from './PlanItemProps'
+import getLanguage, { LanguagesType } from '@/models/i18n'
 
-const usePlanItem = (planItem: PlanItemProps) => {
-  const { language, getLanguages, addCart, onAlert, onAlertStatus } = useContext(SiteContext)
-  const translate = getLanguages()
+const usePlanItem = (lng: LanguagesType, planItem: PlanItemProps) => {
+  const { addCart, onAlert, onAlertStatus } = useContext(SiteContext)
+  const translate = getLanguage(lng)
+  const language = lng
 
   useEffect(() => {
     onAlertStatus(false)
-  },[language])
+  },[lng])
 
   const onAddProduct = () => {
     addCart({

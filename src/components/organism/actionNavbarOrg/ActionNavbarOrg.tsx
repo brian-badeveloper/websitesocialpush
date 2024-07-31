@@ -22,7 +22,7 @@ const ActionNavbarOrg = ({
   changeLang
 }:ActionNavbarOrgProps) => {
 
-  const { onLogout, getStateLogin, quantity } = useActionNavbarOrg(cartNumer)
+  const { onLogout, getStateLogin, quantity } = useActionNavbarOrg(lng,cartNumer)
 
   const translate = getLanguage(lng)
 

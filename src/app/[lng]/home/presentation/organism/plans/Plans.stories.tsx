@@ -13,7 +13,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
   },
 } satisfies Meta<typeof Plans>
 
@@ -24,6 +27,7 @@ export const plans: Story = {
   args: {
     title: "Nuestros planes de crecimiento de instagram",
     text: "Obtenga me gusta reales en su contenido real y aumente su índice de participación",
-    dataCards: plansData
+    dataCards: plansData,
+    lng: 'es'
   },
 }

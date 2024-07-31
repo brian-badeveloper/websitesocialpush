@@ -22,7 +22,7 @@ const useSidebar = ({lng, defaultLang, onChange}: SidebarProps) => {
     onAlert({status: true, messages: [translate.MESSAGE.LOGIN_CLOSE], type: 'success'})
     
     setTimeout(() => {
-      router.replace(`/${lng}/`)
+      router.replace(`/${lng}/`,{scroll: false})
       onAlert({status: false, messages: [], type: 'danger'})
     }, 2000);
 	}

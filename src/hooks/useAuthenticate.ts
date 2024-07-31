@@ -25,7 +25,7 @@ const useAuthenticate = () => {
     
         setTimeout(() => {
           if (!pathNotAllowed.includes(path)) {
-            router.replace(`/${lang}/login`)
+            router.replace(`/${lang}/login`, {scroll: false})
           }
 
           onAlert({status: false, messages: [], type: 'danger'})

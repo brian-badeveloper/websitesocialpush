@@ -1,14 +1,16 @@
 import { useContext, useEffect } from 'react'
 import { SiteContext } from '@/context/SiteContext'
 import { FollowerItemProps } from './FollowerItemProps'
+import getLanguage, { LanguagesType } from '@/models/i18n'
 
-const useFollowerItem = (followerItem: FollowerItemProps) => {
-  const { language, getLanguages, addCart, onAlert, onAlertStatus } = useContext(SiteContext)
-  const translate = getLanguages()
+const useFollowerItem = (lng: LanguagesType,followerItem: FollowerItemProps) => {
+  const { addCart, onAlert, onAlertStatus } = useContext(SiteContext)
+  const translate = getLanguage(lng)
+  const language = lng
 
   useEffect(() => {
     onAlertStatus(false)
-  },[language])
+  },[lng])
 
   const onAddProduct = () => {
     addCart({

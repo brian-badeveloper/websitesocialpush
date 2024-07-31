@@ -1,4 +1,9 @@
+import { LanguageParams } from "@/models/interfaces/LanguageProps"
 import { NetworkType } from "@/models/types/NetworkType"
+
+export interface LikeItemParams extends LanguageParams {
+  item: LikeItemProps
+}
 
 export interface LikeItemProps {
   id: string | null

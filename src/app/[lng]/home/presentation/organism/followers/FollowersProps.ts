@@ -1,6 +1,7 @@
+import { LanguageParams } from "@/models/interfaces/LanguageProps";
 import { FollowerItemProps } from "../followerItem/FollowerItemProps";
 
-export interface FollowersProps {
+export interface FollowersProps extends LanguageParams {
   title: string
   text: string
   textTwo: string

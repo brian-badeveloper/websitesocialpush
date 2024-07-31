@@ -61,7 +61,7 @@ const useDropdownNavbar = () => {
 
     if (RouteValid.current !== RouteValid.full_route) {
       setTimeout(() => {
-        Route.push(RouteValid.link)
+        Route.push(RouteValid.link, {scroll: false})
       }, 800)
     } else {
       onDetectNetwork()

@@ -13,7 +13,10 @@ const meta = {
   },
   // tags: ['autodocs'],
   argTypes: {
-    //
+    lng: {
+      options: ['es','en'],
+      control: { type: 'select' }
+    }
   },
 } satisfies Meta<typeof FollowerItems>
 
@@ -23,6 +26,7 @@ type Story = StoryObj<typeof meta>
 export const followerItems: Story = {
   args: {
     dataCards: followersData,
-    show: true
+    show: true,
+    lng: 'es'
   },
 }

@@ -108,6 +108,7 @@ const HomePage = ({ params: { lng } }: SearchParams) => {
             textBtn={translate.HOME.FOLLOWER_BTN}
             textBtnActive={translate.HOME.FOLLOWER_BTN_ACTIVE}
             dataCards={followersData}
+            lng={lang}
           />
         )
       } 
@@ -124,9 +125,10 @@ const HomePage = ({ params: { lng } }: SearchParams) => {
             }
             text={translate.HOME.LIKES_TEXT}
             dataCards={likesData}
-          />
-        )
-      }
+            lng={lang}
+            />
+          )
+        }
       </div>
       <div id="plans">
       {
@@ -138,8 +140,9 @@ const HomePage = ({ params: { lng } }: SearchParams) => {
               params: [{replace: 'network',to: network}]
             })
           }
-            text={translate.HOME.PLANS_TEXT}
-            dataCards={plansData} 
+          text={translate.HOME.PLANS_TEXT}
+          dataCards={plansData} 
+          lng={lang}
           />
         )
       }    

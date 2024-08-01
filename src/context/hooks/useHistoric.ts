@@ -17,7 +17,7 @@ const useHistoric = () => {
 
    HttpHistoric(token ?? '')
     .then(data => {
-      setHistoric(data.historic && data.historic.length < 0 ? [...data.historic] : [])
+      setHistoric(data.historic && data.historic.length < 0 ? [...data.historic] : [...allHistoric])
     })
     .catch(error => {
       setHistoric([])

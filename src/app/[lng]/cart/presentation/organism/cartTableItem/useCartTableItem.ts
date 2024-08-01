@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { Product } from "@/context/cartReducerProps";
 import { SiteContext } from "@/context/SiteContext";
+import getLanguage, { LanguagesType } from "@/models/i18n";
 
-const useCartTableItem = (product: Product) => {
+const useCartTableItem = (lng: LanguagesType, product: Product) => {
 
-  const { language, getLanguages, cartState, getProduct, updateCart, deleteCart, onAlert} = useContext(SiteContext)
-  const translate = getLanguages()
+  const { cartState, getProduct, updateCart, deleteCart, onAlert} = useContext(SiteContext)
+  const translate = getLanguage(lng)
 
   const format = (num:number) => {
     const nf = new Intl.NumberFormat("en-US", {style: 'currency', currency: 'USD'});
@@ -43,7 +44,6 @@ const useCartTableItem = (product: Product) => {
   }
 
   return {
-    language,
     format,
     cartState,
     onUpdateProduct,

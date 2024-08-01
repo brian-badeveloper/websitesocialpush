@@ -1,6 +1,10 @@
 import { LanguageParams } from "@/models/interfaces/LanguageProps"
 
-export interface CartTableItemProps extends LanguageParams {
+export interface CartTableItemParams extends LanguageParams {
+  item: CartTableItemProps
+}
+
+export interface CartTableItemProps {
   id: string
   name?: string
   name_social: string

@@ -38,7 +38,7 @@ const CartTable = ({lng}: CartTableProps) => {
             {
               items.map((item, key) => (
                 <CartTableItem
-                  {...item}
+                  item={item}
                   lng={lng}
                   key={`table-item-${key}`}
                 />

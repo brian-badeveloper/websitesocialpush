@@ -25,7 +25,7 @@
 	--tertiary: #474698;
 	--main: #1E1F4B;
 	--white: #fff;
-	-orange: #F63;
+	--orange: #F63;
 	--orchid: #D777CD;
 	--lavender: #C37CE4;
 	--red: #FF0000;
@@ -53,6 +53,12 @@
 	--slate-gray: #64748B;
 	--black: #000;
 	--dark: #333;
+	--dark-emperor: #525252;
+	--dark-emperor-b: #4F4F4F;
+	--dark-mine-shaft: #262626; 
+	--dark-mine-shaft-l: #303030; 
+	--dark-boulder: #787575; 
+	--dark-tundora: #4A4A4A;
 	--dark-scorpion: #585858;
 	--dark-outer-space: #212828;
 	--moody-blue: #7877D7;

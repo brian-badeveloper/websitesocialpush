@@ -1,0 +1,115 @@
+.historic-table-item__first {
+  max-width: 300px;
+  position: relative;
+}
+
+.historic-table-item__last {
+  text-align: right;
+}
+
+.historic-table-item__product {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.historic-table-item__card {
+  display: inline-flex;
+  position: relative;
+}
+
+.historic-table-item__card-number {
+  font-family: var(--font-title);
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--scampi);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.historic-table-item__title {
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--scampi);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.historic-table-item__network {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+}
+
+.historic-table-item__network span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.historic-table-item__network b {
+  color: var(--scampi);
+}
+
+.historic-table-item__price,
+.historic-table-item__status,
+.historic-table-item__date,
+.historic-table-item__payment {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black);
+  padding: 0px 20px;
+}
+
+
+.historic-table-item__action {
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .historic-table-item__card-number {
+    font-size: 40px;
+  }
+
+  .historic-table-item__title {
+    font-size: 16px;
+  }
+
+  .historic-table-item__price,
+  .historic-table-item__status,
+  .historic-table-item__date,
+  .historic-table-item__payment {
+    font-size: 14px;  
+  }
+
+  .historic-table-item__network span svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .historic-table-item__card-number {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .historic-table-item__card-number {
+    font-size: 20px;
+  }
+}

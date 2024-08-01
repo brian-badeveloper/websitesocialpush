@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Policies from './Policies'
+import ProfileForm from './ProfileForm'
 
 const meta = {
-  title: 'Pages/Legals/Organism/Policies',
-  component: Policies,
+  title: 'Dashboard/Profile/Organism/ProfileForm',
+  component: ProfileForm,
   parameters: {
     layout: 'padded', // centered, fullscreen, padded
   },
@@ -14,12 +14,12 @@ const meta = {
       control: { type: 'select' }
     }
   },
-} satisfies Meta<typeof Policies>
+} satisfies Meta<typeof ProfileForm>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const policies: Story = {
+export const profileForm: Story = {
   args: {
     lng: 'es'
   },

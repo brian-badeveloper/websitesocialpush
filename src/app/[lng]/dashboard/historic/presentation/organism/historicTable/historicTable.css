@@ -1,0 +1,105 @@
+.historic-table {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.historic-table__responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+}
+
+/* width */
+.historic-table__responsive::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+.historic-table__responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.historic-table__responsive::-webkit-scrollbar-thumb {
+  background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.historic-table__responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.historic-table__table {
+  width: 100%;
+  min-width: 1000px;
+  margin-bottom: 0px;
+  color: var(--black);
+}
+
+.historic-table__empty {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  display: table;
+  font-family: var(--font-text);
+}
+
+table, th, td {
+  border: 1px solid transparent;
+  border-collapse: collapse;
+  border-bottom: 1px solid var(--gray-dark-b);
+}
+
+thead > tr > th {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+thead > tr > th:first-child {
+  padding-left: 0px;
+}
+
+thead > tr > th:last-child  {
+  padding-right: 0px;
+}
+
+th, td {
+  padding: 40px 0px;
+  text-align: left;
+}
+
+td {
+  font-family: var(--font-text);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+  thead > tr > th {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  th, td {
+    padding: 25px 0px;
+    text-align: left;
+  }
+}

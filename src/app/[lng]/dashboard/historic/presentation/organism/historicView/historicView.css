@@ -1,0 +1,29 @@
+.historic-view {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 50px;
+}
+
+.historic-view__title {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 990px) {
+  .historic-view__title {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .historic-view__title {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}

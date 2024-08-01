@@ -45,6 +45,7 @@ const activeLinks = () => {
   const URL = window.location.href
   const menu = document.querySelectorAll(".navbar__menu_items a")
   const footer = document.querySelectorAll('.footer__menu-items a')
+  const sidebar = document.querySelectorAll(".sidebar__link")
   
   menu.forEach((item, key) => {
     const element: HTMLAnchorElement = item as HTMLAnchorElement
@@ -59,6 +60,13 @@ const activeLinks = () => {
       if(element.dataset.target === "false") {
         element.classList.add('active');
       }
+    }
+  })
+
+  sidebar.forEach((item, key) => {
+    const element: HTMLAnchorElement = item as HTMLAnchorElement
+    if (URL === element.href) {
+      element.classList.add('active');
     }
   })
 }
